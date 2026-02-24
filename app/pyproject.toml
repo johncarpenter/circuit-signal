@@ -1,0 +1,19 @@
+[project]
+name = "signal-discovery-app"
+version = "0.1.0"
+description = "Chainlit web app for the Signal Discovery pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "chainlit>=2.0",
+    "anthropic>=0.40",
+    "plotly>=5.0",
+    "kaleido>=0.2",
+    "data-loader-mcp[all]",
+    "signal-discovery-mcp[all]",
+    "signal-correlation-mcp[full]",
+]
+
+[tool.uv.sources]
+data-loader-mcp = { path = "../mcp/layer0", editable = true }
+signal-discovery-mcp = { path = "../mcp/layer1", editable = true }
+signal-correlation-mcp = { path = "../mcp/layer2", editable = true }

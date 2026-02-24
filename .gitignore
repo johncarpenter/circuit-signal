@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+
+# OS
+.DS_Store
+
+# Pipeline run artifacts (generated per-run under reports/)
+reports/*/segments/
+reports/*/baselines/
+reports/*/results/
+reports/*/charts/
+reports/*/unified_dataset.csv
+
+# Generated baseline charts and reports (Layer 1 artifacts)
+mcp/layer1/*_baseline_charts/
+mcp/layer1/*_baseline_report.md
+
+# Signal workspace (legacy)
+.signal-workspace/
+
+# DuckDB
+*.duckdb
+*.duckdb.wal
+
+# MCP server venvs
+mcp/*/.venv/
+
+# Obsidian
+.obsidian/
+
+# Data files (large)
+*.csv
+*.parquet
+!data/**
+
+# TDV profiler venv
+tdv_profiler/.venv/

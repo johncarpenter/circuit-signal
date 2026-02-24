@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "data-loader": {
+      "command": "uv",
+      "args": ["run", "--directory", "/Users/john/Documents/Workspace/Circuit/circuit-signal/mcp/layer0", "data-loader"]
+    },
+    "signal-discovery": {
+      "command": "uv",
+      "args": ["run", "--directory", "/Users/john/Documents/Workspace/Circuit/circuit-signal/mcp/layer1", "signal-discovery"]
+    },
+    "signal-correlation": {
+      "command": "uv",
+      "args": ["run", "--directory", "/Users/john/Documents/Workspace/Circuit/circuit-signal/mcp/layer2", "signal-correlation"]
+    },
+    "query-planner": {
+      "command": "uv",
+      "args": ["run", "--directory", "/Users/john/Documents/Workspace/Circuit/circuit-signal/mcp/query-planner", "query-planner"]
+    }
+  }
+}

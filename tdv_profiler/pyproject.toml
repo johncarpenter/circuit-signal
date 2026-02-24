@@ -1,0 +1,21 @@
+[project]
+name = "tdv-profiler"
+version = "0.1.0"
+description = "Scan data directories and classify datasets by Time-Discriminator-Value pattern. Builds a discriminator relationship graph for dataset discovery and join path resolution."
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.0",
+    "networkx>=3.0",
+    "numpy>=1.26",
+    "pandas>=2.0",
+]
+
+[project.scripts]
+tdv-profiler = "tdv_profiler.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tdv_profiler"]
