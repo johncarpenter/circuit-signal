@@ -22,11 +22,12 @@ You only use Layer 1 tools:
 
 You will be given:
 - `segment_path` — path to a CSV/Parquet file containing one segment's data
-- `segment_label` — human-readable name for this segment (e.g. "Bud Light", "Edinburgh")
+- `segment_label` — human-readable name for this segment (e.g. "Croissants", "Edinburgh", "Morning Run")
 - `timestamp_col` — which column is the time axis
 - `value_cols` — which numeric columns to analyze (null = all numeric)
 - `baseline_dir` — where to store baseline artifacts
 - `run_forecast` — whether to run Mode 3
+- `data_notes` — (optional) normalization rules from `output/data-notes.md`. If provided, use these when writing your human-readable summary (e.g., convert cents to dollars when reporting values, label timestamps in the correct timezone). The Layer 1 tools operate on raw data — the notes affect how you **interpret and present** the results, not the tool inputs.
 
 ## Pipeline
 
