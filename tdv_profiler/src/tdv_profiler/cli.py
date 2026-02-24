@@ -69,6 +69,80 @@ def graph_to_json(scanner: DataLakeScanner) -> dict:
     }
 
 
+def generate_data_notes(scanner: DataLakeScanner) -> str:
+    """Generate a data-notes.md template pre-populated with profiler findings."""
+    lines = ["# Data Notes", "", "## Description", ""]
+
+    # Build a brief dataset inventory
+    summary = scanner.graph.get_summary()
+    datasets = summary.get("datasets", [])
+    if datasets:
+        names = ", ".join(d["id"] for d in datasets)
+        total_rows = sum(d.get("rows", 0) for d in datasets)
+        lines.append(
+            f"This data lake contains {len(datasets)} dataset(s) "
+            f"({names}) with ~{total_rows:,} total rows."
+        )
+    else:
+        lines.append("<!-- Describe what this data represents: industry, geography, time period, etc. -->")
+    lines.append("")
+    lines.append("<!-- Add context about the data source, business domain, and any relevant background. -->")
+
+    # Datasets section
+    lines.extend(["", "## Datasets", ""])
+    for ds in datasets:
+        grain = ds.get("time_grain", "unknown")
+        time_col = ds.get("time_col", "?")
+        sig = ds.get("signature", "?")
+        discs = ", ".join(ds.get("discriminators", [])) or "none"
+        vals = ", ".join(ds.get("values", [])) or "none"
+        lines.append(f"### {ds['id']}")
+        lines.append(f"- **Rows**: {ds.get('rows', '?'):,}")
+        lines.append(f"- **Signature**: {sig}")
+        lines.append(f"- **Time column**: `{time_col}` ({grain})")
+        lines.append(f"- **Discriminators**: {discs}")
+        lines.append(f"- **Value columns**: {vals}")
+        lines.append("")
+
+    # Normalizations section with auto-detected hints
+    lines.extend(["## Normalizations", ""])
+    lines.append("<!-- Review and edit these rules. The pipeline applies them during analysis. -->")
+    lines.append("")
+
+    # Auto-detect currency hints from value column stats
+    for profile in scanner.profiles.values():
+        for col in profile.columns:
+            if col.role != ColumnRole.VALUE or not col.value_stats:
+                continue
+            stats = col.value_stats
+            mean = stats.get("mean")
+            if mean is not None and mean > 100:
+                lines.append(
+                    f"- `{col.name}` in **{profile.dataset_id}**: "
+                    f"mean={mean:,.2f}, range=[{stats.get('min', '?'):,.2f}, {stats.get('max', '?'):,.2f}]. "
+                    f"<!-- Are these cents? If so: convert to dollars (divide by 100). -->"
+                )
+
+    # Timezone hint from time columns
+    time_cols_seen = set()
+    for profile in scanner.profiles.values():
+        for col in profile.columns:
+            if col.role == ColumnRole.TIME and col.name not in time_cols_seen:
+                time_cols_seen.add(col.name)
+                grain = col.time_grain or "unknown"
+                rng = f"{col.time_range[0]} to {col.time_range[1]}" if col.time_range else "?"
+                lines.append(
+                    f"- `{col.name}` ({grain}, {rng}): "
+                    f"<!-- What timezone? e.g. 'Times are UTC, convert to PDT' -->"
+                )
+
+    lines.append("")
+    lines.append("- Currency: <!-- e.g. USD, EUR, GBP -->")
+    lines.append("")
+
+    return "\n".join(lines)
+
+
 def profiles_to_json(scanner: DataLakeScanner) -> list[dict]:
     """Serialize all dataset profiles to JSON-friendly dicts."""
     result = []
@@ -127,6 +201,15 @@ def main(argv: list[str] | None = None) -> int:
         output_path.write_text(json.dumps(data, indent=2, default=str))
 
     print(f"Graph written to {output_path}")
+
+    # Auto-generate data-notes.md alongside the graph (skip if already exists)
+    notes_path = output_path.parent / "data-notes.md"
+    if not notes_path.exists():
+        notes_content = generate_data_notes(scanner)
+        notes_path.write_text(notes_content)
+        print(f"Data notes template written to {notes_path}")
+    else:
+        print(f"Data notes already exists at {notes_path} (not overwritten)")
 
     # Optional: write profiles
     if args.profiles:
