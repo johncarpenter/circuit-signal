@@ -1,11 +1,12 @@
 """
 Signal Discovery MCP Server
 
-Exposes four tools via MCP:
-  1. inspect_dataset   — quick data profiling
-  2. discover_baseline — Mode 1: decompose to find "normal"
-  3. detect_deviations — Mode 2: flag what's different
-  4. project_forecast  — Mode 3: project forward with scenarios
+Exposes five tools via MCP:
+  1. inspect_dataset    — quick data profiling
+  2. assess_relevance   — pre-flight statistical relevance check
+  3. discover_baseline  — Mode 1: decompose to find "normal"
+  4. detect_deviations  — Mode 2: flag what's different
+  5. project_forecast   — Mode 3: project forward with scenarios
 """
 
 import json
@@ -14,6 +15,7 @@ import logging
 from mcp.server.fastmcp import FastMCP
 
 from signal_discovery.tools.inspect import run_inspect
+from signal_discovery.tools.relevance import run_relevance
 from signal_discovery.tools.baseline import run_baseline
 from signal_discovery.tools.deviations import run_deviations
 from signal_discovery.tools.forecast import run_forecast
@@ -38,6 +40,41 @@ def inspect_dataset(data_path: str, sample_rows: int = 5) -> str:
         sample_rows: Number of sample rows to return (default 5)
     """
     result = run_inspect(data_path=data_path, sample_rows=sample_rows)
+    return json.dumps(result, indent=2, default=str)
+
+
+@mcp.tool()
+def assess_relevance(
+    data_path: str,
+    timestamp_col: str,
+    segment_col: str | None = None,
+    value_cols: list[str] | None = None,
+    entity_cols: list[str] | None = None,
+) -> str:
+    """
+    Pre-flight statistical relevance assessment for time-series segments.
+    Run BEFORE discover_baseline to determine which segments have enough
+    data for meaningful signal discovery and what granularity to use.
+
+    Returns per-segment profiles with:
+    - Relevance tier (HIGH / MEDIUM / LOW / INSUFFICIENT)
+    - Recommended granularity (daily / weekly / monthly)
+    - Viable analyses (trend, seasonality, deviations, forecasting)
+    - Confidence modifier (0.0–1.0) for downstream results
+    - Specific warnings about data limitations
+
+    Args:
+        data_path: Path to CSV, Parquet, or JSON file
+        timestamp_col: Name of the timestamp column
+        segment_col: Column to segment by (e.g. 'whiskey_brand'). Null = whole dataset.
+        value_cols: Numeric columns to profile (null = auto-detect)
+        entity_cols: Entity columns for coverage stats (e.g. ['store_id', 'business_id'])
+    """
+    result = run_relevance(
+        data_path=data_path, timestamp_col=timestamp_col,
+        segment_col=segment_col, value_cols=value_cols,
+        entity_cols=entity_cols,
+    )
     return json.dumps(result, indent=2, default=str)
 
 

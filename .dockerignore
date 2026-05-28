@@ -1,0 +1,40 @@
+.git
+.gitignore
+.env
+*.pyc
+__pycache__
+.pytest_cache
+.mypy_cache
+.ruff_cache
+
+# Workspace data (mounted as volume, not baked into image)
+data/
+output/
+reports/
+
+# IDE
+.vscode/
+.idea/
+.obsidian/
+*.swp
+*.swo
+
+# Docker
+docker-compose.override.yml
+
+# Python virtual environments (platform-specific, rebuilt in container)
+.venv/
+**/.venv/
+
+# macOS
+.DS_Store
+
+# Claude Code local state (agent-memory is session-specific)
+.claude/agent-memory/
+
+# Lock files (platform-specific, rebuilt in container)
+**/uv.lock
+
+# Documentation (not needed in image)
+ARCHITECTURE.md
+DATA_PREP_PIPELINE_SPEC.md

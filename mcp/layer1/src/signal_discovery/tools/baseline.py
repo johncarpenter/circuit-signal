@@ -36,6 +36,7 @@ def run_baseline(
     value_cols: list[str] | None = None,
     freq: str | None = None,
     output_dir: str | None = None,
+    skip_report: bool = False,
 ) -> dict:
     """Run Mode 1 baseline discovery."""
 
@@ -57,6 +58,30 @@ def run_baseline(
 
     if not value_cols:
         return {"error": "No analyzable numeric columns found in dataset."}
+
+    # --- Aggregate transactional data to regular time series ---
+    # STL needs one observation per time period. If the data has many more rows
+    # than calendar periods (e.g. 148K transactions over 365 days), resample.
+    RESAMPLE_MAP = {
+        "sub_hourly": "1min", "hourly": "1h", "daily": "1D",
+        "weekly": "1W", "monthly": "1ME", "quarterly": "1QE", "yearly": "1YE",
+    }
+    resample_rule = RESAMPLE_MAP.get(detected_freq)
+    if resample_rule and len(df) > 0:
+        time_span = (df.index.max() - df.index.min()).total_seconds()
+        expected_periods = {
+            "sub_hourly": time_span / 60, "hourly": time_span / 3600,
+            "daily": time_span / 86400, "weekly": time_span / 604800,
+            "monthly": time_span / 2592000, "quarterly": time_span / 7776000,
+            "yearly": time_span / 31536000,
+        }.get(detected_freq, len(df))
+        if expected_periods > 0 and len(df) > expected_periods * 2:
+            logger.info(
+                "Aggregating %d rows to %s time series (detected %d expected periods)",
+                len(df), detected_freq, int(expected_periods),
+            )
+            df = df[value_cols].resample(resample_rule).sum()
+            df = df.loc[df.index.notna()]
 
     # --- Data quality ---
     quality = data_quality_report(df[value_cols])
@@ -101,17 +126,18 @@ def run_baseline(
 
     # --- Generate visual report (non-blocking) ---
     report_path = None
-    try:
-        from signal_discovery.tools.report import generate_baseline_report
-        report_path = generate_baseline_report(
-            baselines=baselines,
-            dataset_summary=dataset_summary,
-            data_path=data_path,
-            detected_freq=detected_freq,
-            df=df,
-        )
-    except Exception as e:
-        logger.warning(f"Baseline report generation failed (non-blocking): {e}")
+    if not skip_report:
+        try:
+            from signal_discovery.tools.report import generate_baseline_report
+            report_path = generate_baseline_report(
+                baselines=baselines,
+                dataset_summary=dataset_summary,
+                data_path=data_path,
+                detected_freq=detected_freq,
+                df=df,
+            )
+        except Exception as e:
+            logger.warning(f"Baseline report generation failed (non-blocking): {e}")
 
     result = {
         "dataset_summary": dataset_summary,

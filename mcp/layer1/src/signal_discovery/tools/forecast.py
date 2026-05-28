@@ -91,6 +91,19 @@ def run_forecast(
     return {"forecasts": forecasts}
 
 
+def _check_prophet():
+    """Re-check Prophet availability at call time (not just import time)."""
+    global HAS_PROPHET
+    if not HAS_PROPHET:
+        try:
+            from prophet import Prophet  # noqa: F811
+            HAS_PROPHET = True
+            logger.info("Prophet detected at call time — switching from fallback to Prophet forecasting.")
+        except ImportError:
+            pass
+    return HAS_PROPHET
+
+
 def _forecast_column(
     series: pd.Series,
     col_name: str,
@@ -101,7 +114,7 @@ def _forecast_column(
 ) -> dict:
     """Generate forecast for a single column."""
 
-    if HAS_PROPHET:
+    if _check_prophet():
         return _prophet_forecast(
             series, col_name, baseline_dir, horizon_delta, confidence_levels, scenarios
         )

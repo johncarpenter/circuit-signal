@@ -1,0 +1,17 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY packages/core /app/packages/core
+RUN pip install --no-cache-dir /app/packages/core
+
+COPY packages/mcp_gateway /app/packages/mcp_gateway
+RUN pip install --no-cache-dir /app/packages/mcp_gateway
+
+EXPOSE 8001
+
+CMD ["python", "-m", "circuit_mcp.main"]

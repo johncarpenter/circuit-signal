@@ -1,0 +1,4022 @@
+{
+  "version": "1.0",
+  "metadata": {},
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "node_type": "DATASET",
+        "source_path": "/workspace/data/jw/jw.csv",
+        "row_count": 22291,
+        "is_temporal": true,
+        "tdv_signature": "T3-D4-V4",
+        "primary_time_col": "created",
+        "time_grain": "hourly",
+        "id": "ds:jw"
+      },
+      {
+        "node_type": "DISCRIMINATOR",
+        "column_name": "business_id",
+        "datasets": [
+          "jw"
+        ],
+        "id": "disc:business_id"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "0350eb37-abff-4c87-b752-9848f9a5e4e2",
+        "id": "val:business_id=0350eb37-abff-4c87-b752-9848f9a5e4e2"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "05a41cf9-967e-4370-be67-ccbf0abd286f",
+        "id": "val:business_id=05a41cf9-967e-4370-be67-ccbf0abd286f"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "0f68b835-3cfd-41de-bed9-8b547b89d409",
+        "id": "val:business_id=0f68b835-3cfd-41de-bed9-8b547b89d409"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "16e9bff0-fb73-419a-8cc1-bc713a43f6f4",
+        "id": "val:business_id=16e9bff0-fb73-419a-8cc1-bc713a43f6f4"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "1b955bca-63db-447f-b75f-d6c8bd90adee",
+        "id": "val:business_id=1b955bca-63db-447f-b75f-d6c8bd90adee"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "20f1c24d-62bc-4173-b922-3b9a78d3a1c9",
+        "id": "val:business_id=20f1c24d-62bc-4173-b922-3b9a78d3a1c9"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "228d625d-2395-41f0-86ec-8750356ae958",
+        "id": "val:business_id=228d625d-2395-41f0-86ec-8750356ae958"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "23e2f976-1bbe-4d92-9a6f-5321a7ae2dcb",
+        "id": "val:business_id=23e2f976-1bbe-4d92-9a6f-5321a7ae2dcb"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "279fc401-9c09-4dff-a12d-22545336003f",
+        "id": "val:business_id=279fc401-9c09-4dff-a12d-22545336003f"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "2e7462bf-df78-47ef-b642-dec38dea5a68",
+        "id": "val:business_id=2e7462bf-df78-47ef-b642-dec38dea5a68"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "30333f81-8b50-47b6-bbef-b76d88d037b2",
+        "id": "val:business_id=30333f81-8b50-47b6-bbef-b76d88d037b2"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "30c1654d-d08b-412b-957a-a7f5e14eaa7a",
+        "id": "val:business_id=30c1654d-d08b-412b-957a-a7f5e14eaa7a"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "40cf3062-93c4-4e77-96d4-785501387d71",
+        "id": "val:business_id=40cf3062-93c4-4e77-96d4-785501387d71"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "426b97be-8944-49df-a492-669e6c130af3",
+        "id": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "4908c626-0377-4061-b547-e3aa817f45fd",
+        "id": "val:business_id=4908c626-0377-4061-b547-e3aa817f45fd"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "61ef1cf6-6d26-4c69-8bd1-08259219fcb1",
+        "id": "val:business_id=61ef1cf6-6d26-4c69-8bd1-08259219fcb1"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "645a5666-7130-474e-af63-5bee7702925c",
+        "id": "val:business_id=645a5666-7130-474e-af63-5bee7702925c"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "66044a19-d509-465c-a3f5-99bfa0df7c9b",
+        "id": "val:business_id=66044a19-d509-465c-a3f5-99bfa0df7c9b"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "666cfc63-47c2-47f5-8927-81f7de507633",
+        "id": "val:business_id=666cfc63-47c2-47f5-8927-81f7de507633"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "670d81f4-3c88-4f10-8c5d-93bdbbc034ce",
+        "id": "val:business_id=670d81f4-3c88-4f10-8c5d-93bdbbc034ce"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "682a0ec2-ef3a-4466-b850-121b33778fca",
+        "id": "val:business_id=682a0ec2-ef3a-4466-b850-121b33778fca"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "702f5a30-5ab6-4c72-bffb-01b1da8f0f0d",
+        "id": "val:business_id=702f5a30-5ab6-4c72-bffb-01b1da8f0f0d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "71682df0-e763-4feb-82b1-569bb897dc6b",
+        "id": "val:business_id=71682df0-e763-4feb-82b1-569bb897dc6b"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "727dda38-dbb5-4d0e-81aa-bb1a4a5c4430",
+        "id": "val:business_id=727dda38-dbb5-4d0e-81aa-bb1a4a5c4430"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "75957f60-9fd1-400b-bde7-d2bcbbd9acdc",
+        "id": "val:business_id=75957f60-9fd1-400b-bde7-d2bcbbd9acdc"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "777f0aa9-61cd-4576-b425-e8269929c6ba",
+        "id": "val:business_id=777f0aa9-61cd-4576-b425-e8269929c6ba"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "7973dfa8-9f57-42ff-b52d-7a227e84cbc8",
+        "id": "val:business_id=7973dfa8-9f57-42ff-b52d-7a227e84cbc8"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "7a4120ee-a455-4ecb-a28f-b04fcf48abc9",
+        "id": "val:business_id=7a4120ee-a455-4ecb-a28f-b04fcf48abc9"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "7a757f21-64a9-4560-983c-10b0b4c25177",
+        "id": "val:business_id=7a757f21-64a9-4560-983c-10b0b4c25177"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "7b921b2b-e9ca-4a95-b3fc-87963e3c881c",
+        "id": "val:business_id=7b921b2b-e9ca-4a95-b3fc-87963e3c881c"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "8468ad56-f27f-4c52-b162-7dc243bf415f",
+        "id": "val:business_id=8468ad56-f27f-4c52-b162-7dc243bf415f"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "8505839a-9a8a-4764-a65d-5a9b6fe99ac5",
+        "id": "val:business_id=8505839a-9a8a-4764-a65d-5a9b6fe99ac5"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "86bafa66-7f08-445b-9872-ee53b351f8a3",
+        "id": "val:business_id=86bafa66-7f08-445b-9872-ee53b351f8a3"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "906b7fe9-a740-4531-ba0e-ab7e0534dfb4",
+        "id": "val:business_id=906b7fe9-a740-4531-ba0e-ab7e0534dfb4"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "96be2674-4ed2-4b02-bbc3-c919af5118bd",
+        "id": "val:business_id=96be2674-4ed2-4b02-bbc3-c919af5118bd"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "99b7df8b-8c03-493b-9252-0c044799bc42",
+        "id": "val:business_id=99b7df8b-8c03-493b-9252-0c044799bc42"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "9f8f78ee-f2ab-4eff-a40b-85901e727911",
+        "id": "val:business_id=9f8f78ee-f2ab-4eff-a40b-85901e727911"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "9fc96d27-3c49-431f-8941-e7108d4ac43b",
+        "id": "val:business_id=9fc96d27-3c49-431f-8941-e7108d4ac43b"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "a49f7278-fbdf-457d-9836-319dd24fc0b5",
+        "id": "val:business_id=a49f7278-fbdf-457d-9836-319dd24fc0b5"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "a646b0e2-2085-4a62-97c2-6d61db88faa7",
+        "id": "val:business_id=a646b0e2-2085-4a62-97c2-6d61db88faa7"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "a6f00085-dc39-4fb6-98cd-6d7f049fd38e",
+        "id": "val:business_id=a6f00085-dc39-4fb6-98cd-6d7f049fd38e"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "a8d7d345-2895-4c1c-bd67-3ed2b79282a9",
+        "id": "val:business_id=a8d7d345-2895-4c1c-bd67-3ed2b79282a9"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "ba6a3195-9964-4b72-a812-7a8110a822c6",
+        "id": "val:business_id=ba6a3195-9964-4b72-a812-7a8110a822c6"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "bcfeccf0-12c3-45b3-8ff3-cbf30067ec5f",
+        "id": "val:business_id=bcfeccf0-12c3-45b3-8ff3-cbf30067ec5f"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "bcff7968-fb5b-4b7c-ba7f-24a78fdba832",
+        "id": "val:business_id=bcff7968-fb5b-4b7c-ba7f-24a78fdba832"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "cccf8edb-fb1a-4859-b14d-46b5a693a141",
+        "id": "val:business_id=cccf8edb-fb1a-4859-b14d-46b5a693a141"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "d260cee6-0d64-4b48-ae2b-3031954272d4",
+        "id": "val:business_id=d260cee6-0d64-4b48-ae2b-3031954272d4"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "dbace810-dffb-4e28-a6d0-3673a4b2a2d2",
+        "id": "val:business_id=dbace810-dffb-4e28-a6d0-3673a4b2a2d2"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "dece44b7-e84b-4a26-ade8-699a50396168",
+        "id": "val:business_id=dece44b7-e84b-4a26-ade8-699a50396168"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "e0d583bd-27f7-4669-a999-22c736802171",
+        "id": "val:business_id=e0d583bd-27f7-4669-a999-22c736802171"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "e4891a20-cd42-4909-b00b-9c3d27424653",
+        "id": "val:business_id=e4891a20-cd42-4909-b00b-9c3d27424653"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "edcaf501-3373-431e-8cfe-633a281fca91",
+        "id": "val:business_id=edcaf501-3373-431e-8cfe-633a281fca91"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "f32396ea-28eb-4e67-b599-8de344c42c4d",
+        "id": "val:business_id=f32396ea-28eb-4e67-b599-8de344c42c4d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "f8da93f1-0867-430b-b8ac-b678431f6981",
+        "id": "val:business_id=f8da93f1-0867-430b-b8ac-b678431f6981"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "business_id",
+        "value": "fe589056-b52a-412e-a40e-967326193a95",
+        "id": "val:business_id=fe589056-b52a-412e-a40e-967326193a95"
+      },
+      {
+        "node_type": "DISCRIMINATOR",
+        "column_name": "store_id",
+        "datasets": [
+          "jw"
+        ],
+        "id": "disc:store_id"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+        "id": "val:store_id=05dc156e-e5cc-4392-9c88-fe7eeeb7f681"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+        "id": "val:store_id=0c9e7fe3-3ed5-493b-8996-261ae8fa91e0"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+        "id": "val:store_id=0ef40565-b3ea-45aa-9d78-2ff6f24ecca9"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "13967e97-24cb-43c2-90f9-828a33d4fc54",
+        "id": "val:store_id=13967e97-24cb-43c2-90f9-828a33d4fc54"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "18b67a17-34e9-41a4-8d56-5d6447090cd1",
+        "id": "val:store_id=18b67a17-34e9-41a4-8d56-5d6447090cd1"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+        "id": "val:store_id=1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+        "id": "val:store_id=1d7e8977-a8cf-48ed-bbbb-207bb4d072a2"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "22402b8d-115c-4e65-a9e2-638148eb6734",
+        "id": "val:store_id=22402b8d-115c-4e65-a9e2-638148eb6734"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+        "id": "val:store_id=2766d0e2-041c-4cde-8b8c-52b37d84ddc3"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "285f085f-016b-4de9-a9d2-59bef1c56ed5",
+        "id": "val:store_id=285f085f-016b-4de9-a9d2-59bef1c56ed5"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "28dcfe60-d9fb-4a25-86e1-48be3bada076",
+        "id": "val:store_id=28dcfe60-d9fb-4a25-86e1-48be3bada076"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "2a3d7745-473c-4d88-bd52-b38574ac1261",
+        "id": "val:store_id=2a3d7745-473c-4d88-bd52-b38574ac1261"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "300fc1d5-7ba1-456c-a778-3da81083e69c",
+        "id": "val:store_id=300fc1d5-7ba1-456c-a778-3da81083e69c"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+        "id": "val:store_id=378bc0e3-734f-43dd-a826-88b18d9e8fdd"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "39c58da1-2114-4602-89b1-b74c837f6278",
+        "id": "val:store_id=39c58da1-2114-4602-89b1-b74c837f6278"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "3aa9b1d9-5265-4021-b679-03047eb7f901",
+        "id": "val:store_id=3aa9b1d9-5265-4021-b679-03047eb7f901"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+        "id": "val:store_id=3e26ec76-b6ab-4a88-9b2c-b8a833c95471"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "4136467a-3fec-452d-a168-6603c7394bdb",
+        "id": "val:store_id=4136467a-3fec-452d-a168-6603c7394bdb"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "423acfcb-2ad5-4267-89c9-e94460be7026",
+        "id": "val:store_id=423acfcb-2ad5-4267-89c9-e94460be7026"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+        "id": "val:store_id=42dffc5b-b7dd-4d39-8770-7a447fd22fe5"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+        "id": "val:store_id=42f6a902-4a2f-4e7e-8709-4a240f5830c5"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+        "id": "val:store_id=487dbe4e-b411-4209-84c4-da8fa3b44e3e"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "491a3128-adf0-4fea-910a-59142afa8b59",
+        "id": "val:store_id=491a3128-adf0-4fea-910a-59142afa8b59"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+        "id": "val:store_id=535cd80c-4ba1-4482-9d40-2a163ce360a8"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "5a551de9-0670-460c-b7c3-758236d8a879",
+        "id": "val:store_id=5a551de9-0670-460c-b7c3-758236d8a879"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+        "id": "val:store_id=5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+        "id": "val:store_id=60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "618cd7d1-72ab-4ef9-9166-5e5a03312742",
+        "id": "val:store_id=618cd7d1-72ab-4ef9-9166-5e5a03312742"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "62d8203a-e913-426b-a195-fd18ed482222",
+        "id": "val:store_id=62d8203a-e913-426b-a195-fd18ed482222"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "62d8203a-e913-426b-a195-fd18ed486662",
+        "id": "val:store_id=62d8203a-e913-426b-a195-fd18ed486662"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+        "id": "val:store_id=6a483545-eb5d-4cc6-8af1-435751a5f0bf"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+        "id": "val:store_id=6aff6333-480e-4749-89a9-7dd1dd8d2f4e"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+        "id": "val:store_id=6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+        "id": "val:store_id=6fb66d85-b395-4cfc-81ee-c3438d711ce2"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "74803c60-bec8-44c6-82fb-4cdf00555529",
+        "id": "val:store_id=74803c60-bec8-44c6-82fb-4cdf00555529"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "77d51a4f-1dfb-4879-b1b6-2327609532bd",
+        "id": "val:store_id=77d51a4f-1dfb-4879-b1b6-2327609532bd"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "7db88623-46d8-40f3-a202-0e55eaaa0bcb",
+        "id": "val:store_id=7db88623-46d8-40f3-a202-0e55eaaa0bcb"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+        "id": "val:store_id=7db88623-46d8-40f3-a202-0e55eaaa2222"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+        "id": "val:store_id=7f65ca0f-3709-454b-9ff8-c9b45ffb553d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "8141c2dc-31f7-4733-a1c5-46ac31473a80",
+        "id": "val:store_id=8141c2dc-31f7-4733-a1c5-46ac31473a80"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "824e9f55-0671-4d78-989a-f2a56791e8fc",
+        "id": "val:store_id=824e9f55-0671-4d78-989a-f2a56791e8fc"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "84c01cb1-385e-4dea-834f-a1f34502e856",
+        "id": "val:store_id=84c01cb1-385e-4dea-834f-a1f34502e856"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+        "id": "val:store_id=8a50c10a-021d-464f-b44c-b5c0ecfb4a7c"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "8d3080de-b1eb-48f4-800c-f7849cac48e0",
+        "id": "val:store_id=8d3080de-b1eb-48f4-800c-f7849cac48e0"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "9141a8f0-2341-4ef7-80ab-0de741be0f37",
+        "id": "val:store_id=9141a8f0-2341-4ef7-80ab-0de741be0f37"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "91982696-458a-477c-b0cf-c6ce55370cc0",
+        "id": "val:store_id=91982696-458a-477c-b0cf-c6ce55370cc0"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+        "id": "val:store_id=967b1ad8-73f1-4d70-ba13-6270359bbb3d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "9adef4a9-9186-47d3-92da-9a58dc48b009",
+        "id": "val:store_id=9adef4a9-9186-47d3-92da-9a58dc48b009"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "a05b5344-b81c-40bd-8869-14803f095ed5",
+        "id": "val:store_id=a05b5344-b81c-40bd-8869-14803f095ed5"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+        "id": "val:store_id=a64a0732-4992-4d1c-b57e-59c24e9d6a40"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+        "id": "val:store_id=a8731320-8e01-41a2-b6c9-6f9ba7625a80"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "a9647544-85ff-4b2e-bbbd-545367f013ae",
+        "id": "val:store_id=a9647544-85ff-4b2e-bbbd-545367f013ae"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+        "id": "val:store_id=b34984e6-1214-4c18-a8d7-fdd5180a23bb"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "b58ba106-3cfe-4362-8eeb-277c4714e362",
+        "id": "val:store_id=b58ba106-3cfe-4362-8eeb-277c4714e362"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+        "id": "val:store_id=b7b7ed17-5775-4308-8e3a-26e234a2b33b"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+        "id": "val:store_id=b8d7cf96-f91b-4a79-a07d-92c06cab7564"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+        "id": "val:store_id=b9fc8f74-6666-4d02-bc61-ba9cac92422d"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+        "id": "val:store_id=ba7116e2-3156-49a2-a6c6-9a28b6ff8413"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "bb39c900-0d1e-4295-b467-464e74a617b2",
+        "id": "val:store_id=bb39c900-0d1e-4295-b467-464e74a617b2"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+        "id": "val:store_id=be20b2b9-1fba-41d1-b4d8-11dff0d9cefd"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "c67f9964-2436-492c-82c7-7bcc171d0366",
+        "id": "val:store_id=c67f9964-2436-492c-82c7-7bcc171d0366"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "d316de86-6197-4262-a37c-426b0f47cace",
+        "id": "val:store_id=d316de86-6197-4262-a37c-426b0f47cace"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "d7bcfedd-488a-4ade-b767-94a902f25e00",
+        "id": "val:store_id=d7bcfedd-488a-4ade-b767-94a902f25e00"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+        "id": "val:store_id=d88e69c7-9f8e-4032-8b6b-570d422e0a03"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "d92ae9df-0303-4db3-8d7c-c951727b4503",
+        "id": "val:store_id=d92ae9df-0303-4db3-8d7c-c951727b4503"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "da33676a-fa1c-4563-bb37-c324ea403b9c",
+        "id": "val:store_id=da33676a-fa1c-4563-bb37-c324ea403b9c"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+        "id": "val:store_id=dcab940a-c35b-4d03-b4fe-9e9c7e319ac0"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "e0f53218-7146-414d-903a-9ba33f8d9e49",
+        "id": "val:store_id=e0f53218-7146-414d-903a-9ba33f8d9e49"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "e2230ec5-4e20-443f-9c69-63aea677e495",
+        "id": "val:store_id=e2230ec5-4e20-443f-9c69-63aea677e495"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+        "id": "val:store_id=e39a18e8-a3d4-4739-9cfd-0951a7c34bdb"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "e5b6cab2-9bff-4c77-836b-41ad19241c42",
+        "id": "val:store_id=e5b6cab2-9bff-4c77-836b-41ad19241c42"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "e9cbc316-78b5-4181-a6ce-15ee866cda21",
+        "id": "val:store_id=e9cbc316-78b5-4181-a6ce-15ee866cda21"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "eaebf180-2c7b-490a-a915-a125e4250a59",
+        "id": "val:store_id=eaebf180-2c7b-490a-a915-a125e4250a59"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+        "id": "val:store_id=ed359d61-b0e6-40d8-a517-e41b6298ae2c"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "eecdc853-135e-448d-88cc-9f209084613b",
+        "id": "val:store_id=eecdc853-135e-448d-88cc-9f209084613b"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+        "id": "val:store_id=f9d4b974-3b7c-4913-9ea3-33a64a0ffae1"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "fec39756-9457-4b58-8f29-45a57e0acb96",
+        "id": "val:store_id=fec39756-9457-4b58-8f29-45a57e0acb96"
+      },
+      {
+        "node_type": "DISCRIMINATOR",
+        "column_name": "description",
+        "datasets": [
+          "jw"
+        ],
+        "id": "disc:description"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "#330",
+        "id": "val:description=#330"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "#331",
+        "id": "val:description=#331"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "#332",
+        "id": "val:description=#332"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "1/2 JW Black",
+        "id": "val:description=1/2 JW Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "2 Oz",
+        "id": "val:description=2 Oz"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "3 ice cubes only LOL",
+        "id": "val:description=3 ice cubes only LOL"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "BT BlueLabel JW",
+        "id": "val:description=BT BlueLabel JW"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "BTL JW BLACK",
+        "id": "val:description=BTL JW BLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW",
+        "id": "val:description=JW"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW ",
+        "id": "val:description=JW "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW BLACK",
+        "id": "val:description=JW BLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW BLUE",
+        "id": "val:description=JW BLUE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW BLUE DOUBLE",
+        "id": "val:description=JW BLUE DOUBLE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Black",
+        "id": "val:description=JW Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Black BTL SERV",
+        "id": "val:description=JW Black BTL SERV"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Blue",
+        "id": "val:description=JW Blue"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Blue BTL",
+        "id": "val:description=JW Blue BTL"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Double Black",
+        "id": "val:description=JW Double Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW HIGH RYE",
+        "id": "val:description=JW HIGH RYE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Old Fasho",
+        "id": "val:description=JW Old Fasho"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Platinum",
+        "id": "val:description=JW Platinum"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW RED",
+        "id": "val:description=JW RED"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW Red",
+        "id": "val:description=JW Red"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JW. Blue",
+        "id": "val:description=JW. Blue"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWALKER",
+        "id": "val:description=JWALKER"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWALKER GREEN",
+        "id": "val:description=JWALKER GREEN"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWB DOUBLE",
+        "id": "val:description=JWB DOUBLE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWBLACK",
+        "id": "val:description=JWBLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWF",
+        "id": "val:description=JWF"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWalker Black Manhattan",
+        "id": "val:description=JWalker Black Manhattan"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWalker Blue",
+        "id": "val:description=JWalker Blue"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWalker Red",
+        "id": "val:description=JWalker Red"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "JWalker Red Manhattan",
+        "id": "val:description=JWalker Red Manhattan"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "REGULAR",
+        "id": "val:description=REGULAR"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ROCKS",
+        "id": "val:description=ROCKS"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "UP",
+        "id": "val:description=UP"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ice",
+        "id": "val:description=ice"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ice nwater",
+        "id": "val:description=ice nwater"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "neat",
+        "id": "val:description=neat"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "soda/tall",
+        "id": "val:description=soda/tall"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "w  water",
+        "id": "val:description=w  water"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "water",
+        "id": "val:description=water"
+      },
+      {
+        "node_type": "DISCRIMINATOR",
+        "column_name": "name",
+        "datasets": [
+          "jw"
+        ],
+        "id": "disc:name"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/2 JW BLACK        ",
+        "id": "val:name=0 1/2 JW BLACK        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/2 JW Black        ",
+        "id": "val:name=0 1/2 JW Black        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/2 JW Blk          ",
+        "id": "val:name=0 1/2 JW Blk          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/2 JW Red          ",
+        "id": "val:name=0 1/2 JW Red          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/3 JW BLACK        ",
+        "id": "val:name=0 1/3 JW BLACK        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/3 JW Blk          ",
+        "id": "val:name=0 1/3 JW Blk          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/3 JW Red          ",
+        "id": "val:name=0 1/3 JW Red          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/4 JW BLACK        ",
+        "id": "val:name=0 1/4 JW BLACK        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/4 JW Blk          ",
+        "id": "val:name=0 1/4 JW Blk          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/5 JW BLACK        ",
+        "id": "val:name=0 1/5 JW BLACK        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/5 JW Black        ",
+        "id": "val:name=0 1/5 JW Black        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/5 JW Red          ",
+        "id": "val:name=0 1/5 JW Red          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "0 1/9 JW BLUE         ",
+        "id": "val:name=0 1/9 JW BLUE         "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "1 0/1 JW Black        ",
+        "id": "val:name=1 0/1 JW Black        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "1/2 JW Black",
+        "id": "val:name=1/2 JW Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "BS/JW-BLACK",
+        "id": "val:name=BS/JW-BLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "BT BlueLabel JW",
+        "id": "val:name=BT BlueLabel JW"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "BTL JW BLACK",
+        "id": "val:name=BTL JW BLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "Db JW Black",
+        "id": "val:name=Db JW Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "Db JW Red",
+        "id": "val:name=Db JW Red"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "GBS- JW Black",
+        "id": "val:name=GBS- JW Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW",
+        "id": "val:name=JW"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW ",
+        "id": "val:name=JW "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW 18",
+        "id": "val:name=JW 18"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLACK",
+        "id": "val:name=JW BLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLACK        ",
+        "id": "val:name=JW BLACK        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLK",
+        "id": "val:name=JW BLK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLK          ",
+        "id": "val:name=JW BLK          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLUE",
+        "id": "val:name=JW BLUE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLUE         ",
+        "id": "val:name=JW BLUE         "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW BLUE DOUBLE",
+        "id": "val:name=JW BLUE DOUBLE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Black",
+        "id": "val:name=JW Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Black        ",
+        "id": "val:name=JW Black        "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Black BTL SERV",
+        "id": "val:name=JW Black BTL SERV"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blk",
+        "id": "val:name=JW Blk"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blk          ",
+        "id": "val:name=JW Blk          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blk Rx",
+        "id": "val:name=JW Blk Rx"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blk Rx       ",
+        "id": "val:name=JW Blk Rx       "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blk Up",
+        "id": "val:name=JW Blk Up"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blk Up       ",
+        "id": "val:name=JW Blk Up       "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blue",
+        "id": "val:name=JW Blue"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blue         ",
+        "id": "val:name=JW Blue         "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blue BTL",
+        "id": "val:name=JW Blue BTL"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Blue Label",
+        "id": "val:name=JW Blue Label"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Double Black",
+        "id": "val:name=JW Double Black"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Green Taiwa",
+        "id": "val:name=JW Green Taiwa"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW HIGH RYE",
+        "id": "val:name=JW HIGH RYE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Old Fashioned",
+        "id": "val:name=JW Old Fashioned"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Plat",
+        "id": "val:name=JW Plat"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Platinum",
+        "id": "val:name=JW Platinum"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW RED",
+        "id": "val:name=JW RED"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW RED          ",
+        "id": "val:name=JW RED          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Red",
+        "id": "val:name=JW Red"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Red          ",
+        "id": "val:name=JW Red          "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Red Rx",
+        "id": "val:name=JW Red Rx"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW Red Rx       ",
+        "id": "val:name=JW Red Rx       "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JW. Blue",
+        "id": "val:name=JW. Blue"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER",
+        "id": "val:name=JWALKER"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER BLACK",
+        "id": "val:name=JWALKER BLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER BLACK   ",
+        "id": "val:name=JWALKER BLACK   "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER BLUE",
+        "id": "val:name=JWALKER BLUE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER BLUE    ",
+        "id": "val:name=JWALKER BLUE    "
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER GREEN",
+        "id": "val:name=JWALKER GREEN"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWALKER RED",
+        "id": "val:name=JWALKER RED"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWB DOUBLE",
+        "id": "val:name=JWB DOUBLE"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWBLACK",
+        "id": "val:name=JWBLACK"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWF",
+        "id": "val:name=JWF"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWalker Black Manhattan",
+        "id": "val:name=JWalker Black Manhattan"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWalker Blue",
+        "id": "val:name=JWalker Blue"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWalker Red",
+        "id": "val:name=JWalker Red"
+      },
+      {
+        "node_type": "VALUE",
+        "discriminator": "name",
+        "value": "JWalker Red Manhattan",
+        "id": "val:name=JWalker Red Manhattan"
+      },
+      {
+        "node_type": "VALUE_COLUMN",
+        "column_name": "sku",
+        "stats": {
+          "mean": 1280030.1711,
+          "std": 2159162.9704,
+          "min": 108.0,
+          "max": 50060105.0,
+          "median": 2050199.0
+        },
+        "id": "valcol:sku"
+      },
+      {
+        "node_type": "VALUE_COLUMN",
+        "column_name": "amount",
+        "stats": {
+          "mean": 2051.3946,
+          "std": 5173.6125,
+          "min": -1700.0,
+          "max": 85000.0,
+          "median": 1500.0
+        },
+        "id": "valcol:amount"
+      },
+      {
+        "node_type": "VALUE_COLUMN",
+        "column_name": "quantity",
+        "stats": {
+          "mean": 1.1048,
+          "std": 0.7948,
+          "min": 1.0,
+          "max": 49.0,
+          "median": 1.0
+        },
+        "id": "valcol:quantity"
+      },
+      {
+        "node_type": "VALUE_COLUMN",
+        "column_name": "seatnumber",
+        "stats": {
+          "mean": 1.7148,
+          "std": 4.8287,
+          "min": null,
+          "max": 99.0,
+          "median": 1.0
+        },
+        "id": "valcol:seatnumber"
+      }
+    ],
+    "edges": [
+      {
+        "edge_type": "DATASET_HAS_DISCRIMINATOR",
+        "source": "ds:jw",
+        "target": "disc:business_id"
+      },
+      {
+        "edge_type": "DATASET_HAS_DISCRIMINATOR",
+        "source": "ds:jw",
+        "target": "disc:store_id"
+      },
+      {
+        "edge_type": "DATASET_HAS_DISCRIMINATOR",
+        "source": "ds:jw",
+        "target": "disc:description"
+      },
+      {
+        "edge_type": "DATASET_HAS_DISCRIMINATOR",
+        "source": "ds:jw",
+        "target": "disc:name"
+      },
+      {
+        "edge_type": "DATASET_HAS_VALUE_COL",
+        "source": "ds:jw",
+        "target": "valcol:sku"
+      },
+      {
+        "edge_type": "DATASET_HAS_VALUE_COL",
+        "source": "ds:jw",
+        "target": "valcol:amount"
+      },
+      {
+        "edge_type": "DATASET_HAS_VALUE_COL",
+        "source": "ds:jw",
+        "target": "valcol:quantity"
+      },
+      {
+        "edge_type": "DATASET_HAS_VALUE_COL",
+        "source": "ds:jw",
+        "target": "valcol:seatnumber"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=0350eb37-abff-4c87-b752-9848f9a5e4e2"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=05a41cf9-967e-4370-be67-ccbf0abd286f"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=0f68b835-3cfd-41de-bed9-8b547b89d409"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=16e9bff0-fb73-419a-8cc1-bc713a43f6f4"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=1b955bca-63db-447f-b75f-d6c8bd90adee"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=20f1c24d-62bc-4173-b922-3b9a78d3a1c9"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=228d625d-2395-41f0-86ec-8750356ae958"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=23e2f976-1bbe-4d92-9a6f-5321a7ae2dcb"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=279fc401-9c09-4dff-a12d-22545336003f"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=2e7462bf-df78-47ef-b642-dec38dea5a68"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=30333f81-8b50-47b6-bbef-b76d88d037b2"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=30c1654d-d08b-412b-957a-a7f5e14eaa7a"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=40cf3062-93c4-4e77-96d4-785501387d71"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=4908c626-0377-4061-b547-e3aa817f45fd"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=61ef1cf6-6d26-4c69-8bd1-08259219fcb1"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=645a5666-7130-474e-af63-5bee7702925c"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=66044a19-d509-465c-a3f5-99bfa0df7c9b"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=666cfc63-47c2-47f5-8927-81f7de507633"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=670d81f4-3c88-4f10-8c5d-93bdbbc034ce"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=682a0ec2-ef3a-4466-b850-121b33778fca"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=702f5a30-5ab6-4c72-bffb-01b1da8f0f0d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=71682df0-e763-4feb-82b1-569bb897dc6b"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=727dda38-dbb5-4d0e-81aa-bb1a4a5c4430"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=75957f60-9fd1-400b-bde7-d2bcbbd9acdc"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=777f0aa9-61cd-4576-b425-e8269929c6ba"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=7973dfa8-9f57-42ff-b52d-7a227e84cbc8"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=7a4120ee-a455-4ecb-a28f-b04fcf48abc9"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=7a757f21-64a9-4560-983c-10b0b4c25177"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=7b921b2b-e9ca-4a95-b3fc-87963e3c881c"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=8468ad56-f27f-4c52-b162-7dc243bf415f"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=8505839a-9a8a-4764-a65d-5a9b6fe99ac5"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=86bafa66-7f08-445b-9872-ee53b351f8a3"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=906b7fe9-a740-4531-ba0e-ab7e0534dfb4"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=96be2674-4ed2-4b02-bbc3-c919af5118bd"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=99b7df8b-8c03-493b-9252-0c044799bc42"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=9f8f78ee-f2ab-4eff-a40b-85901e727911"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=9fc96d27-3c49-431f-8941-e7108d4ac43b"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=a49f7278-fbdf-457d-9836-319dd24fc0b5"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=a646b0e2-2085-4a62-97c2-6d61db88faa7"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=a6f00085-dc39-4fb6-98cd-6d7f049fd38e"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=a8d7d345-2895-4c1c-bd67-3ed2b79282a9"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=ba6a3195-9964-4b72-a812-7a8110a822c6"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=bcfeccf0-12c3-45b3-8ff3-cbf30067ec5f"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=bcff7968-fb5b-4b7c-ba7f-24a78fdba832"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=cccf8edb-fb1a-4859-b14d-46b5a693a141"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=d260cee6-0d64-4b48-ae2b-3031954272d4"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=dbace810-dffb-4e28-a6d0-3673a4b2a2d2"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=dece44b7-e84b-4a26-ade8-699a50396168"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=e0d583bd-27f7-4669-a999-22c736802171"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=e4891a20-cd42-4909-b00b-9c3d27424653"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=edcaf501-3373-431e-8cfe-633a281fca91"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=f32396ea-28eb-4e67-b599-8de344c42c4d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=f8da93f1-0867-430b-b8ac-b678431f6981"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:business_id",
+        "target": "val:business_id=fe589056-b52a-412e-a40e-967326193a95"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=05dc156e-e5cc-4392-9c88-fe7eeeb7f681"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=0c9e7fe3-3ed5-493b-8996-261ae8fa91e0"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=0ef40565-b3ea-45aa-9d78-2ff6f24ecca9"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=13967e97-24cb-43c2-90f9-828a33d4fc54"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=18b67a17-34e9-41a4-8d56-5d6447090cd1"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=1d7e8977-a8cf-48ed-bbbb-207bb4d072a2"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=22402b8d-115c-4e65-a9e2-638148eb6734"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=2766d0e2-041c-4cde-8b8c-52b37d84ddc3"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=285f085f-016b-4de9-a9d2-59bef1c56ed5"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=28dcfe60-d9fb-4a25-86e1-48be3bada076"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=2a3d7745-473c-4d88-bd52-b38574ac1261"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=300fc1d5-7ba1-456c-a778-3da81083e69c"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=378bc0e3-734f-43dd-a826-88b18d9e8fdd"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=39c58da1-2114-4602-89b1-b74c837f6278"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=3aa9b1d9-5265-4021-b679-03047eb7f901"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=3e26ec76-b6ab-4a88-9b2c-b8a833c95471"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=4136467a-3fec-452d-a168-6603c7394bdb"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=423acfcb-2ad5-4267-89c9-e94460be7026"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=42dffc5b-b7dd-4d39-8770-7a447fd22fe5"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=42f6a902-4a2f-4e7e-8709-4a240f5830c5"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=487dbe4e-b411-4209-84c4-da8fa3b44e3e"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=491a3128-adf0-4fea-910a-59142afa8b59"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=535cd80c-4ba1-4482-9d40-2a163ce360a8"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=5a551de9-0670-460c-b7c3-758236d8a879"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=618cd7d1-72ab-4ef9-9166-5e5a03312742"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=62d8203a-e913-426b-a195-fd18ed482222"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=62d8203a-e913-426b-a195-fd18ed486662"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=6a483545-eb5d-4cc6-8af1-435751a5f0bf"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=6aff6333-480e-4749-89a9-7dd1dd8d2f4e"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=6fb66d85-b395-4cfc-81ee-c3438d711ce2"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=74803c60-bec8-44c6-82fb-4cdf00555529"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=77d51a4f-1dfb-4879-b1b6-2327609532bd"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=7db88623-46d8-40f3-a202-0e55eaaa0bcb"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=7db88623-46d8-40f3-a202-0e55eaaa2222"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=7f65ca0f-3709-454b-9ff8-c9b45ffb553d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=8141c2dc-31f7-4733-a1c5-46ac31473a80"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=824e9f55-0671-4d78-989a-f2a56791e8fc"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=84c01cb1-385e-4dea-834f-a1f34502e856"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=8a50c10a-021d-464f-b44c-b5c0ecfb4a7c"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=8d3080de-b1eb-48f4-800c-f7849cac48e0"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=9141a8f0-2341-4ef7-80ab-0de741be0f37"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=91982696-458a-477c-b0cf-c6ce55370cc0"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=967b1ad8-73f1-4d70-ba13-6270359bbb3d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=9adef4a9-9186-47d3-92da-9a58dc48b009"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=a05b5344-b81c-40bd-8869-14803f095ed5"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=a64a0732-4992-4d1c-b57e-59c24e9d6a40"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=a8731320-8e01-41a2-b6c9-6f9ba7625a80"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=a9647544-85ff-4b2e-bbbd-545367f013ae"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=b34984e6-1214-4c18-a8d7-fdd5180a23bb"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=b58ba106-3cfe-4362-8eeb-277c4714e362"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=b7b7ed17-5775-4308-8e3a-26e234a2b33b"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=b8d7cf96-f91b-4a79-a07d-92c06cab7564"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=b9fc8f74-6666-4d02-bc61-ba9cac92422d"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=ba7116e2-3156-49a2-a6c6-9a28b6ff8413"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=bb39c900-0d1e-4295-b467-464e74a617b2"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=be20b2b9-1fba-41d1-b4d8-11dff0d9cefd"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=c67f9964-2436-492c-82c7-7bcc171d0366"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=d316de86-6197-4262-a37c-426b0f47cace"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=d7bcfedd-488a-4ade-b767-94a902f25e00"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=d88e69c7-9f8e-4032-8b6b-570d422e0a03"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=d92ae9df-0303-4db3-8d7c-c951727b4503"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=da33676a-fa1c-4563-bb37-c324ea403b9c"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=dcab940a-c35b-4d03-b4fe-9e9c7e319ac0"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=e0f53218-7146-414d-903a-9ba33f8d9e49"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=e2230ec5-4e20-443f-9c69-63aea677e495"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=e39a18e8-a3d4-4739-9cfd-0951a7c34bdb"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=e5b6cab2-9bff-4c77-836b-41ad19241c42"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=e9cbc316-78b5-4181-a6ce-15ee866cda21"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=eaebf180-2c7b-490a-a915-a125e4250a59"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=ed359d61-b0e6-40d8-a517-e41b6298ae2c"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=eecdc853-135e-448d-88cc-9f209084613b"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=f9d4b974-3b7c-4913-9ea3-33a64a0ffae1"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:store_id",
+        "target": "val:store_id=fec39756-9457-4b58-8f29-45a57e0acb96"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+        "target": "val:business_id=1b955bca-63db-447f-b75f-d6c8bd90adee"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+        "target": "val:business_id=61ef1cf6-6d26-4c69-8bd1-08259219fcb1"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=13967e97-24cb-43c2-90f9-828a33d4fc54",
+        "target": "val:business_id=7b921b2b-e9ca-4a95-b3fc-87963e3c881c"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=18b67a17-34e9-41a4-8d56-5d6447090cd1",
+        "target": "val:business_id=682a0ec2-ef3a-4466-b850-121b33778fca"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+        "target": "val:business_id=727dda38-dbb5-4d0e-81aa-bb1a4a5c4430"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+        "target": "val:business_id=7a757f21-64a9-4560-983c-10b0b4c25177"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=22402b8d-115c-4e65-a9e2-638148eb6734",
+        "target": "val:business_id=670d81f4-3c88-4f10-8c5d-93bdbbc034ce"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+        "target": "val:business_id=7973dfa8-9f57-42ff-b52d-7a227e84cbc8"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=285f085f-016b-4de9-a9d2-59bef1c56ed5",
+        "target": "val:business_id=228d625d-2395-41f0-86ec-8750356ae958"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=28dcfe60-d9fb-4a25-86e1-48be3bada076",
+        "target": "val:business_id=e4891a20-cd42-4909-b00b-9c3d27424653"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=2a3d7745-473c-4d88-bd52-b38574ac1261",
+        "target": "val:business_id=7a757f21-64a9-4560-983c-10b0b4c25177"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=300fc1d5-7ba1-456c-a778-3da81083e69c",
+        "target": "val:business_id=0350eb37-abff-4c87-b752-9848f9a5e4e2"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+        "target": "val:business_id=a49f7278-fbdf-457d-9836-319dd24fc0b5"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=39c58da1-2114-4602-89b1-b74c837f6278",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=3aa9b1d9-5265-4021-b679-03047eb7f901",
+        "target": "val:business_id=7a757f21-64a9-4560-983c-10b0b4c25177"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+        "target": "val:business_id=645a5666-7130-474e-af63-5bee7702925c"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=4136467a-3fec-452d-a168-6603c7394bdb",
+        "target": "val:business_id=279fc401-9c09-4dff-a12d-22545336003f"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=423acfcb-2ad5-4267-89c9-e94460be7026",
+        "target": "val:business_id=71682df0-e763-4feb-82b1-569bb897dc6b"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+        "target": "val:business_id=8468ad56-f27f-4c52-b162-7dc243bf415f"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+        "target": "val:business_id=99b7df8b-8c03-493b-9252-0c044799bc42"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+        "target": "val:business_id=cccf8edb-fb1a-4859-b14d-46b5a693a141"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=491a3128-adf0-4fea-910a-59142afa8b59",
+        "target": "val:business_id=16e9bff0-fb73-419a-8cc1-bc713a43f6f4"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=535cd80c-4ba1-4482-9d40-2a163ce360a8",
+        "target": "val:business_id=a8d7d345-2895-4c1c-bd67-3ed2b79282a9"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=5a551de9-0670-460c-b7c3-758236d8a879",
+        "target": "val:business_id=23e2f976-1bbe-4d92-9a6f-5321a7ae2dcb"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+        "target": "val:business_id=0f68b835-3cfd-41de-bed9-8b547b89d409"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=618cd7d1-72ab-4ef9-9166-5e5a03312742",
+        "target": "val:business_id=2e7462bf-df78-47ef-b642-dec38dea5a68"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=62d8203a-e913-426b-a195-fd18ed482222",
+        "target": "val:business_id=96be2674-4ed2-4b02-bbc3-c919af5118bd"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=62d8203a-e913-426b-a195-fd18ed486662",
+        "target": "val:business_id=96be2674-4ed2-4b02-bbc3-c919af5118bd"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+        "target": "val:business_id=e0d583bd-27f7-4669-a999-22c736802171"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+        "target": "val:business_id=9f8f78ee-f2ab-4eff-a40b-85901e727911"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+        "target": "val:business_id=702f5a30-5ab6-4c72-bffb-01b1da8f0f0d"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+        "target": "val:business_id=666cfc63-47c2-47f5-8927-81f7de507633"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=74803c60-bec8-44c6-82fb-4cdf00555529",
+        "target": "val:business_id=228d625d-2395-41f0-86ec-8750356ae958"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=77d51a4f-1dfb-4879-b1b6-2327609532bd",
+        "target": "val:business_id=0f68b835-3cfd-41de-bed9-8b547b89d409"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=7db88623-46d8-40f3-a202-0e55eaaa0bcb",
+        "target": "val:business_id=66044a19-d509-465c-a3f5-99bfa0df7c9b"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=7db88623-46d8-40f3-a202-0e55eaaa2222",
+        "target": "val:business_id=66044a19-d509-465c-a3f5-99bfa0df7c9b"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+        "target": "val:business_id=a646b0e2-2085-4a62-97c2-6d61db88faa7"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=8141c2dc-31f7-4733-a1c5-46ac31473a80",
+        "target": "val:business_id=7a757f21-64a9-4560-983c-10b0b4c25177"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=824e9f55-0671-4d78-989a-f2a56791e8fc",
+        "target": "val:business_id=86bafa66-7f08-445b-9872-ee53b351f8a3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=84c01cb1-385e-4dea-834f-a1f34502e856",
+        "target": "val:business_id=30c1654d-d08b-412b-957a-a7f5e14eaa7a"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+        "target": "val:business_id=dbace810-dffb-4e28-a6d0-3673a4b2a2d2"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=8d3080de-b1eb-48f4-800c-f7849cac48e0",
+        "target": "val:business_id=d260cee6-0d64-4b48-ae2b-3031954272d4"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=9141a8f0-2341-4ef7-80ab-0de741be0f37",
+        "target": "val:business_id=dece44b7-e84b-4a26-ade8-699a50396168"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=91982696-458a-477c-b0cf-c6ce55370cc0",
+        "target": "val:business_id=05a41cf9-967e-4370-be67-ccbf0abd286f"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+        "target": "val:business_id=30333f81-8b50-47b6-bbef-b76d88d037b2"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=9adef4a9-9186-47d3-92da-9a58dc48b009",
+        "target": "val:business_id=f8da93f1-0867-430b-b8ac-b678431f6981"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=a05b5344-b81c-40bd-8869-14803f095ed5",
+        "target": "val:business_id=bcff7968-fb5b-4b7c-ba7f-24a78fdba832"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+        "target": "val:business_id=f32396ea-28eb-4e67-b599-8de344c42c4d"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=a9647544-85ff-4b2e-bbbd-545367f013ae",
+        "target": "val:business_id=7a4120ee-a455-4ecb-a28f-b04fcf48abc9"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+        "target": "val:business_id=906b7fe9-a740-4531-ba0e-ab7e0534dfb4"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=b58ba106-3cfe-4362-8eeb-277c4714e362",
+        "target": "val:business_id=20f1c24d-62bc-4173-b922-3b9a78d3a1c9"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+        "target": "val:business_id=fe589056-b52a-412e-a40e-967326193a95"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+        "target": "val:business_id=bcfeccf0-12c3-45b3-8ff3-cbf30067ec5f"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+        "target": "val:business_id=8505839a-9a8a-4764-a65d-5a9b6fe99ac5"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+        "target": "val:business_id=75957f60-9fd1-400b-bde7-d2bcbbd9acdc"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=bb39c900-0d1e-4295-b467-464e74a617b2",
+        "target": "val:business_id=ba6a3195-9964-4b72-a812-7a8110a822c6"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=c67f9964-2436-492c-82c7-7bcc171d0366",
+        "target": "val:business_id=4908c626-0377-4061-b547-e3aa817f45fd"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=d316de86-6197-4262-a37c-426b0f47cace",
+        "target": "val:business_id=edcaf501-3373-431e-8cfe-633a281fca91"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=d7bcfedd-488a-4ade-b767-94a902f25e00",
+        "target": "val:business_id=9f8f78ee-f2ab-4eff-a40b-85901e727911"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+        "target": "val:business_id=a6f00085-dc39-4fb6-98cd-6d7f049fd38e"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=d92ae9df-0303-4db3-8d7c-c951727b4503",
+        "target": "val:business_id=9fc96d27-3c49-431f-8941-e7108d4ac43b"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=da33676a-fa1c-4563-bb37-c324ea403b9c",
+        "target": "val:business_id=40cf3062-93c4-4e77-96d4-785501387d71"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+        "target": "val:business_id=a646b0e2-2085-4a62-97c2-6d61db88faa7"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=e0f53218-7146-414d-903a-9ba33f8d9e49",
+        "target": "val:business_id=66044a19-d509-465c-a3f5-99bfa0df7c9b"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=e2230ec5-4e20-443f-9c69-63aea677e495",
+        "target": "val:business_id=7973dfa8-9f57-42ff-b52d-7a227e84cbc8"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+        "target": "val:business_id=66044a19-d509-465c-a3f5-99bfa0df7c9b"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=e5b6cab2-9bff-4c77-836b-41ad19241c42",
+        "target": "val:business_id=23e2f976-1bbe-4d92-9a6f-5321a7ae2dcb"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=e9cbc316-78b5-4181-a6ce-15ee866cda21",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=eaebf180-2c7b-490a-a915-a125e4250a59",
+        "target": "val:business_id=228d625d-2395-41f0-86ec-8750356ae958"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+        "target": "val:business_id=426b97be-8944-49df-a492-669e6c130af3"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=eecdc853-135e-448d-88cc-9f209084613b",
+        "target": "val:business_id=777f0aa9-61cd-4576-b425-e8269929c6ba"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+        "target": "val:business_id=228d625d-2395-41f0-86ec-8750356ae958"
+      },
+      {
+        "edge_type": "CHILD_OF",
+        "child_discriminator": "store_id",
+        "parent_discriminator": "business_id",
+        "source": "val:store_id=fec39756-9457-4b58-8f29-45a57e0acb96",
+        "target": "val:business_id=bcfeccf0-12c3-45b3-8ff3-cbf30067ec5f"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=#330"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=#331"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=#332"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=1/2 JW Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=2 Oz"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=3 ice cubes only LOL"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=BT BlueLabel JW"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=BTL JW BLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW BLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW BLUE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW BLUE DOUBLE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Black BTL SERV"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Blue"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Blue BTL"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Double Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW HIGH RYE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Old Fasho"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Platinum"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW RED"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW Red"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JW. Blue"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWALKER"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWALKER GREEN"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWB DOUBLE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWBLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWF"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWalker Black Manhattan"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWalker Blue"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWalker Red"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=JWalker Red Manhattan"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=REGULAR"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=ROCKS"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=UP"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=ice"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=ice nwater"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=neat"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=soda/tall"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=w  water"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:description",
+        "target": "val:description=water"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/2 JW BLACK        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/2 JW Black        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/2 JW Blk          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/2 JW Red          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/3 JW BLACK        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/3 JW Blk          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/3 JW Red          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/4 JW BLACK        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/4 JW Blk          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/5 JW BLACK        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/5 JW Black        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/5 JW Red          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=0 1/9 JW BLUE         "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=1 0/1 JW Black        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=1/2 JW Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=BS/JW-BLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=BT BlueLabel JW"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=BTL JW BLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=Db JW Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=Db JW Red"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=GBS- JW Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW 18"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLACK        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLK          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLUE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLUE         "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW BLUE DOUBLE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Black        "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Black BTL SERV"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blk"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blk          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blk Rx"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blk Rx       "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blk Up"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blk Up       "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blue"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blue         "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blue BTL"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Blue Label"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Double Black"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Green Taiwa"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW HIGH RYE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Old Fashioned"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Plat"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Platinum"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW RED"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW RED          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Red"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Red          "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Red Rx"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW Red Rx       "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JW. Blue"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER BLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER BLACK   "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER BLUE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER BLUE    "
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER GREEN"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWALKER RED"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWB DOUBLE"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWBLACK"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWF"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWalker Black Manhattan"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWalker Blue"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWalker Red"
+      },
+      {
+        "edge_type": "DISCRIMINATOR_HAS_VALUE",
+        "source": "disc:name",
+        "target": "val:name=JWalker Red Manhattan"
+      }
+    ]
+  },
+  "profiles": {
+    "jw": {
+      "dataset_id": "jw",
+      "source_path": "/workspace/data/jw/jw.csv",
+      "row_count": 22291,
+      "is_temporal": true,
+      "primary_time_col": "created",
+      "discriminators": [
+        "business_id",
+        "store_id",
+        "description",
+        "name"
+      ],
+      "values": [
+        "sku",
+        "amount",
+        "quantity",
+        "seatnumber"
+      ],
+      "tdv_signature": "T3-D4-V4",
+      "columns": [
+        {
+          "name": "business_id",
+          "role": "discriminator",
+          "dtype": "VARCHAR",
+          "cardinality": 55,
+          "null_pct": 0.0,
+          "sample_values": [
+            "a646b0e2-2085-4a62-97c2-6d61db88faa7",
+            "4908c626-0377-4061-b547-e3aa817f45fd",
+            "682a0ec2-ef3a-4466-b850-121b33778fca",
+            "2e7462bf-df78-47ef-b642-dec38dea5a68",
+            "ba6a3195-9964-4b72-a812-7a8110a822c6",
+            "7a4120ee-a455-4ecb-a28f-b04fcf48abc9",
+            "a8d7d345-2895-4c1c-bd67-3ed2b79282a9",
+            "702f5a30-5ab6-4c72-bffb-01b1da8f0f0d",
+            "8468ad56-f27f-4c52-b162-7dc243bf415f",
+            "e0d583bd-27f7-4669-a999-22c736802171"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.002467363509936746,
+          "distinct_values": [
+            "0350eb37-abff-4c87-b752-9848f9a5e4e2",
+            "05a41cf9-967e-4370-be67-ccbf0abd286f",
+            "0f68b835-3cfd-41de-bed9-8b547b89d409",
+            "16e9bff0-fb73-419a-8cc1-bc713a43f6f4",
+            "1b955bca-63db-447f-b75f-d6c8bd90adee",
+            "20f1c24d-62bc-4173-b922-3b9a78d3a1c9",
+            "228d625d-2395-41f0-86ec-8750356ae958",
+            "23e2f976-1bbe-4d92-9a6f-5321a7ae2dcb",
+            "279fc401-9c09-4dff-a12d-22545336003f",
+            "2e7462bf-df78-47ef-b642-dec38dea5a68",
+            "30333f81-8b50-47b6-bbef-b76d88d037b2",
+            "30c1654d-d08b-412b-957a-a7f5e14eaa7a",
+            "40cf3062-93c4-4e77-96d4-785501387d71",
+            "426b97be-8944-49df-a492-669e6c130af3",
+            "4908c626-0377-4061-b547-e3aa817f45fd",
+            "61ef1cf6-6d26-4c69-8bd1-08259219fcb1",
+            "645a5666-7130-474e-af63-5bee7702925c",
+            "66044a19-d509-465c-a3f5-99bfa0df7c9b",
+            "666cfc63-47c2-47f5-8927-81f7de507633",
+            "670d81f4-3c88-4f10-8c5d-93bdbbc034ce",
+            "682a0ec2-ef3a-4466-b850-121b33778fca",
+            "702f5a30-5ab6-4c72-bffb-01b1da8f0f0d",
+            "71682df0-e763-4feb-82b1-569bb897dc6b",
+            "727dda38-dbb5-4d0e-81aa-bb1a4a5c4430",
+            "75957f60-9fd1-400b-bde7-d2bcbbd9acdc",
+            "777f0aa9-61cd-4576-b425-e8269929c6ba",
+            "7973dfa8-9f57-42ff-b52d-7a227e84cbc8",
+            "7a4120ee-a455-4ecb-a28f-b04fcf48abc9",
+            "7a757f21-64a9-4560-983c-10b0b4c25177",
+            "7b921b2b-e9ca-4a95-b3fc-87963e3c881c",
+            "8468ad56-f27f-4c52-b162-7dc243bf415f",
+            "8505839a-9a8a-4764-a65d-5a9b6fe99ac5",
+            "86bafa66-7f08-445b-9872-ee53b351f8a3",
+            "906b7fe9-a740-4531-ba0e-ab7e0534dfb4",
+            "96be2674-4ed2-4b02-bbc3-c919af5118bd",
+            "99b7df8b-8c03-493b-9252-0c044799bc42",
+            "9f8f78ee-f2ab-4eff-a40b-85901e727911",
+            "9fc96d27-3c49-431f-8941-e7108d4ac43b",
+            "a49f7278-fbdf-457d-9836-319dd24fc0b5",
+            "a646b0e2-2085-4a62-97c2-6d61db88faa7",
+            "a6f00085-dc39-4fb6-98cd-6d7f049fd38e",
+            "a8d7d345-2895-4c1c-bd67-3ed2b79282a9",
+            "ba6a3195-9964-4b72-a812-7a8110a822c6",
+            "bcfeccf0-12c3-45b3-8ff3-cbf30067ec5f",
+            "bcff7968-fb5b-4b7c-ba7f-24a78fdba832",
+            "cccf8edb-fb1a-4859-b14d-46b5a693a141",
+            "d260cee6-0d64-4b48-ae2b-3031954272d4",
+            "dbace810-dffb-4e28-a6d0-3673a4b2a2d2",
+            "dece44b7-e84b-4a26-ade8-699a50396168",
+            "e0d583bd-27f7-4669-a999-22c736802171",
+            "e4891a20-cd42-4909-b00b-9c3d27424653",
+            "edcaf501-3373-431e-8cfe-633a281fca91",
+            "f32396ea-28eb-4e67-b599-8de344c42c4d",
+            "f8da93f1-0867-430b-b8ac-b678431f6981",
+            "fe589056-b52a-412e-a40e-967326193a95"
+          ],
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "posid",
+          "role": "identifier",
+          "dtype": "VARCHAR",
+          "cardinality": 20552,
+          "null_pct": 0.0,
+          "sample_values": [
+            "2097213",
+            "4194307",
+            "2097188",
+            "377241:1",
+            "1049175",
+            "1690412:8",
+            "4202330",
+            "957376:2",
+            "2117179",
+            "2097559"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.9219864519312727,
+          "distinct_values": null,
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "posorder_id",
+          "role": "identifier",
+          "dtype": "VARCHAR",
+          "cardinality": 12549,
+          "null_pct": 0.0,
+          "sample_values": [
+            "8b7f8011-e543-433f-aa71-2c397d9362d3",
+            "99f2efea-603a-452a-8bfc-3a021e938427",
+            "26b9e288-c422-4bc4-86a9-6881d93bcb32",
+            "53d7fedf-98b2-45cd-baf3-cd6fa978ff1f",
+            "8d13ac5a-3d34-4c45-879a-a4f204521558",
+            "1a3c737a-05d7-411f-9a34-dbb6e57b38ab",
+            "af0638d7-e744-421d-8de3-5c36a1a8c4cd",
+            "e96975de-3c76-4ac2-979d-46cfedce487a",
+            "37515156-8448-4380-951a-029c99dd5d09",
+            "8bb8aa33-565c-40c0-86a0-889d0e6d4706"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.5629626306581131,
+          "distinct_values": null,
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "store_id",
+          "role": "discriminator",
+          "dtype": "VARCHAR",
+          "cardinality": 77,
+          "null_pct": 0.0,
+          "sample_values": [
+            "7db88623-46d8-40f3-a202-0e55eaaa2222",
+            "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+            "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+            "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+            "491a3128-adf0-4fea-910a-59142afa8b59",
+            "e0f53218-7146-414d-903a-9ba33f8d9e49",
+            "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+            "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+            "d7bcfedd-488a-4ade-b767-94a902f25e00",
+            "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.003454308913911444,
+          "distinct_values": [
+            "05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+            "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+            "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+            "13967e97-24cb-43c2-90f9-828a33d4fc54",
+            "18b67a17-34e9-41a4-8d56-5d6447090cd1",
+            "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+            "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+            "22402b8d-115c-4e65-a9e2-638148eb6734",
+            "2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+            "285f085f-016b-4de9-a9d2-59bef1c56ed5",
+            "28dcfe60-d9fb-4a25-86e1-48be3bada076",
+            "2a3d7745-473c-4d88-bd52-b38574ac1261",
+            "300fc1d5-7ba1-456c-a778-3da81083e69c",
+            "378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+            "39c58da1-2114-4602-89b1-b74c837f6278",
+            "3aa9b1d9-5265-4021-b679-03047eb7f901",
+            "3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+            "4136467a-3fec-452d-a168-6603c7394bdb",
+            "423acfcb-2ad5-4267-89c9-e94460be7026",
+            "42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+            "42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+            "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+            "491a3128-adf0-4fea-910a-59142afa8b59",
+            "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+            "5a551de9-0670-460c-b7c3-758236d8a879",
+            "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+            "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+            "618cd7d1-72ab-4ef9-9166-5e5a03312742",
+            "62d8203a-e913-426b-a195-fd18ed482222",
+            "62d8203a-e913-426b-a195-fd18ed486662",
+            "6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+            "6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+            "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+            "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+            "74803c60-bec8-44c6-82fb-4cdf00555529",
+            "77d51a4f-1dfb-4879-b1b6-2327609532bd",
+            "7db88623-46d8-40f3-a202-0e55eaaa0bcb",
+            "7db88623-46d8-40f3-a202-0e55eaaa2222",
+            "7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+            "8141c2dc-31f7-4733-a1c5-46ac31473a80",
+            "824e9f55-0671-4d78-989a-f2a56791e8fc",
+            "84c01cb1-385e-4dea-834f-a1f34502e856",
+            "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+            "8d3080de-b1eb-48f4-800c-f7849cac48e0",
+            "9141a8f0-2341-4ef7-80ab-0de741be0f37",
+            "91982696-458a-477c-b0cf-c6ce55370cc0",
+            "967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+            "9adef4a9-9186-47d3-92da-9a58dc48b009",
+            "a05b5344-b81c-40bd-8869-14803f095ed5",
+            "a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+            "a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+            "a9647544-85ff-4b2e-bbbd-545367f013ae",
+            "b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+            "b58ba106-3cfe-4362-8eeb-277c4714e362",
+            "b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+            "b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+            "b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+            "ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+            "bb39c900-0d1e-4295-b467-464e74a617b2",
+            "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+            "c67f9964-2436-492c-82c7-7bcc171d0366",
+            "d316de86-6197-4262-a37c-426b0f47cace",
+            "d7bcfedd-488a-4ade-b767-94a902f25e00",
+            "d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+            "d92ae9df-0303-4db3-8d7c-c951727b4503",
+            "da33676a-fa1c-4563-bb37-c324ea403b9c",
+            "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+            "e0f53218-7146-414d-903a-9ba33f8d9e49",
+            "e2230ec5-4e20-443f-9c69-63aea677e495",
+            "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+            "e5b6cab2-9bff-4c77-836b-41ad19241c42",
+            "e9cbc316-78b5-4181-a6ce-15ee866cda21",
+            "eaebf180-2c7b-490a-a915-a125e4250a59",
+            "ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+            "eecdc853-135e-448d-88cc-9f209084613b",
+            "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+            "fec39756-9457-4b58-8f29-45a57e0acb96"
+          ],
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "created",
+          "role": "time",
+          "dtype": "TIMESTAMP",
+          "cardinality": 19030,
+          "null_pct": 0.0,
+          "sample_values": [
+            "2022-07-31 08:39:15.972181",
+            "2022-07-08 02:24:19.773997",
+            "2023-08-17 00:45:11.876704",
+            "2022-03-06 09:45:43.279580",
+            "2023-05-31 23:56:27.602267",
+            "2024-06-30 00:57:06.573865",
+            "2021-12-14 21:15:58.787190",
+            "2022-02-05 04:01:06.899922",
+            "2024-08-24 04:35:04.201831",
+            "2024-12-11 03:16:47.636860"
+          ],
+          "time_grain": "hourly",
+          "time_range": [
+            "2019-06-12 01:59:37.851000",
+            "2025-12-03 05:18:12.862457"
+          ],
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "updated",
+          "role": "time",
+          "dtype": "TIMESTAMP",
+          "cardinality": 19016,
+          "null_pct": 0.0,
+          "sample_values": [
+            "2022-07-31 08:39:15.972182",
+            "2023-10-16 04:42:47.853721",
+            "2022-05-02 01:32:56.558443",
+            "2025-04-15 17:28:38.603276",
+            "2022-07-04 05:21:47.773574",
+            "2024-12-21 09:35:07.642954",
+            "2023-06-03 08:24:44.373476",
+            "2022-08-21 04:26:03.384443",
+            "2022-07-17 02:49:40.797148",
+            "2022-12-01 04:41:21.998980"
+          ],
+          "time_grain": "hourly",
+          "time_range": [
+            "2019-06-12 01:59:37.851000",
+            "2025-12-03 05:18:12.862457"
+          ],
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "sku",
+          "role": "value",
+          "dtype": "BIGINT",
+          "cardinality": 89,
+          "null_pct": 0.0,
+          "sample_values": [
+            "75084",
+            "6075",
+            "210610",
+            "26040",
+            "60006",
+            "97206",
+            "999001",
+            "50060004",
+            "30104",
+            "602005"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": false,
+          "value_stats": {
+            "mean": 1280030.1711,
+            "std": 2159162.9704,
+            "min": 108.0,
+            "max": 50060105.0,
+            "median": 2050199.0
+          }
+        },
+        {
+          "name": "amount",
+          "role": "value",
+          "dtype": "BIGINT",
+          "cardinality": 89,
+          "null_pct": 0.0,
+          "sample_values": [
+            "1500",
+            "85000",
+            "1600",
+            "55000",
+            "79500",
+            "1100",
+            "4500",
+            "1900",
+            "1000",
+            "45000"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": false,
+          "value_stats": {
+            "mean": 2051.3946,
+            "std": 5173.6125,
+            "min": -1700.0,
+            "max": 85000.0,
+            "median": 1500.0
+          }
+        },
+        {
+          "name": "description",
+          "role": "discriminator",
+          "dtype": "VARCHAR",
+          "cardinality": 42,
+          "null_pct": 0.6812614956708986,
+          "sample_values": [
+            "JW Red",
+            "JW Double Black",
+            "JW Black",
+            "JWF",
+            "JW Blue BTL",
+            "JWalker Red",
+            "BT BlueLabel JW",
+            "JW",
+            "ice nwater",
+            "JWB DOUBLE"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.0018841684984971514,
+          "distinct_values": [
+            "#330",
+            "#331",
+            "#332",
+            "1/2 JW Black",
+            "2 Oz",
+            "3 ice cubes only LOL",
+            "BT BlueLabel JW",
+            "BTL JW BLACK",
+            "JW",
+            "JW ",
+            "JW BLACK",
+            "JW BLUE",
+            "JW BLUE DOUBLE",
+            "JW Black",
+            "JW Black BTL SERV",
+            "JW Blue",
+            "JW Blue BTL",
+            "JW Double Black",
+            "JW HIGH RYE",
+            "JW Old Fasho",
+            "JW Platinum",
+            "JW RED",
+            "JW Red",
+            "JW. Blue",
+            "JWALKER",
+            "JWALKER GREEN",
+            "JWB DOUBLE",
+            "JWBLACK",
+            "JWF",
+            "JWalker Black Manhattan",
+            "JWalker Blue",
+            "JWalker Red",
+            "JWalker Red Manhattan",
+            "REGULAR",
+            "ROCKS",
+            "UP",
+            "ice",
+            "ice nwater",
+            "neat",
+            "soda/tall",
+            "w  water",
+            "water"
+          ],
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "name",
+          "role": "discriminator",
+          "dtype": "VARCHAR",
+          "cardinality": 71,
+          "null_pct": 0.0,
+          "sample_values": [
+            "JW Red",
+            "JW Double Black",
+            "JW Black",
+            "JWF",
+            "JW Blue BTL",
+            "JW Blk",
+            "JW Red Rx",
+            "JWALKER BLUE    ",
+            "JWalker Red",
+            "BT BlueLabel JW"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.003185141985554708,
+          "distinct_values": [
+            "0 1/2 JW BLACK        ",
+            "0 1/2 JW Black        ",
+            "0 1/2 JW Blk          ",
+            "0 1/2 JW Red          ",
+            "0 1/3 JW BLACK        ",
+            "0 1/3 JW Blk          ",
+            "0 1/3 JW Red          ",
+            "0 1/4 JW BLACK        ",
+            "0 1/4 JW Blk          ",
+            "0 1/5 JW BLACK        ",
+            "0 1/5 JW Black        ",
+            "0 1/5 JW Red          ",
+            "0 1/9 JW BLUE         ",
+            "1 0/1 JW Black        ",
+            "1/2 JW Black",
+            "BS/JW-BLACK",
+            "BT BlueLabel JW",
+            "BTL JW BLACK",
+            "Db JW Black",
+            "Db JW Red",
+            "GBS- JW Black",
+            "JW",
+            "JW ",
+            "JW 18",
+            "JW BLACK",
+            "JW BLACK        ",
+            "JW BLK",
+            "JW BLK          ",
+            "JW BLUE",
+            "JW BLUE         ",
+            "JW BLUE DOUBLE",
+            "JW Black",
+            "JW Black        ",
+            "JW Black BTL SERV",
+            "JW Blk",
+            "JW Blk          ",
+            "JW Blk Rx",
+            "JW Blk Rx       ",
+            "JW Blk Up",
+            "JW Blk Up       ",
+            "JW Blue",
+            "JW Blue         ",
+            "JW Blue BTL",
+            "JW Blue Label",
+            "JW Double Black",
+            "JW Green Taiwa",
+            "JW HIGH RYE",
+            "JW Old Fashioned",
+            "JW Plat",
+            "JW Platinum",
+            "JW RED",
+            "JW RED          ",
+            "JW Red",
+            "JW Red          ",
+            "JW Red Rx",
+            "JW Red Rx       ",
+            "JW. Blue",
+            "JWALKER",
+            "JWALKER BLACK",
+            "JWALKER BLACK   ",
+            "JWALKER BLUE",
+            "JWALKER BLUE    ",
+            "JWALKER GREEN",
+            "JWALKER RED",
+            "JWB DOUBLE",
+            "JWBLACK",
+            "JWF",
+            "JWalker Black Manhattan",
+            "JWalker Blue",
+            "JWalker Red",
+            "JWalker Red Manhattan"
+          ],
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "quantity",
+          "role": "value",
+          "dtype": "BIGINT",
+          "cardinality": 23,
+          "null_pct": 0.0,
+          "sample_values": [
+            "14",
+            "11",
+            "5",
+            "17",
+            "9",
+            "16",
+            "22",
+            "1",
+            "13",
+            "8"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": false,
+          "value_stats": {
+            "mean": 1.1048,
+            "std": 0.7948,
+            "min": 1.0,
+            "max": 49.0,
+            "median": 1.0
+          }
+        },
+        {
+          "name": "seatnumber",
+          "role": "value",
+          "dtype": "BIGINT",
+          "cardinality": 79,
+          "null_pct": 0.0,
+          "sample_values": [
+            "0",
+            "5",
+            "14",
+            "11",
+            "9",
+            "15",
+            "37",
+            "85",
+            "31",
+            "30"
+          ],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": false,
+          "value_stats": {
+            "mean": 1.7148,
+            "std": 4.8287,
+            "min": null,
+            "max": 99.0,
+            "median": 1.0
+          }
+        },
+        {
+          "name": "_fivetran_deleted",
+          "role": "unknown",
+          "dtype": "VARCHAR",
+          "cardinality": 0,
+          "null_pct": 1.0,
+          "sample_values": [],
+          "time_grain": null,
+          "time_range": null,
+          "cardinality_ratio": 0.0,
+          "distinct_values": null,
+          "is_continuous": null,
+          "value_stats": null
+        },
+        {
+          "name": "_fivetran_synced",
+          "role": "time",
+          "dtype": "TIMESTAMP",
+          "cardinality": 11409,
+          "null_pct": 0.0,
+          "sample_values": [
+            "2025-11-20 21:46:18.019000",
+            "2025-11-20 21:38:32.883000",
+            "2025-11-20 21:48:15.215000",
+            "2025-11-20 21:35:42.064000",
+            "2025-11-20 21:41:20.676000",
+            "2025-11-20 21:32:17.525000",
+            "2025-11-20 21:33:59.409000",
+            "2025-11-20 21:45:00.872000",
+            "2025-11-20 21:42:12.858000",
+            "2025-11-20 21:51:02.521000"
+          ],
+          "time_grain": "hourly",
+          "time_range": [
+            "2025-11-20 21:10:06.326000",
+            "2025-12-03 07:16:54.231000"
+          ],
+          "cardinality_ratio": null,
+          "distinct_values": null,
+          "is_continuous": null,
+          "value_stats": null
+        }
+      ]
+    }
+  }
+}

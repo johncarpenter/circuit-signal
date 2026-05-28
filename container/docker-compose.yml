@@ -1,0 +1,106 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_DB: circuit
+      POSTGRES_USER: circuit
+      POSTGRES_PASSWORD: circuit_dev
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U circuit"]
+      interval: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 5
+
+  minio:
+    image: minio/minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: circuit
+      MINIO_ROOT_PASSWORD: circuit_dev
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - miniodata:/data
+
+  mcp-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile.mcp-gateway
+    environment:
+      DATABASE_URL: postgresql+asyncpg://circuit:circuit_dev@postgres:5432/circuit
+    ports:
+      - "8001:8001"
+    depends_on:
+      postgres: { condition: service_healthy }
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    environment:
+      DATABASE_URL: postgresql+asyncpg://circuit:circuit_dev@postgres:5432/circuit
+      REDIS_URL: redis://redis:6379
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: circuit
+      MINIO_SECRET_KEY: circuit_dev
+      MINIO_BUCKET: circuit-signal
+      MINIO_SECURE: "false"
+      MAX_UPLOAD_SIZE_MB: "500"
+      CORS_ORIGINS: '["http://localhost:3000"]'
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      minio: { condition: service_started }
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.worker
+    environment:
+      DATABASE_URL: postgresql://circuit:circuit_dev@postgres:5432/circuit
+      REDIS_URL: redis://redis:6379
+      MINIO_ENDPOINT: minio:9000
+      MINIO_ACCESS_KEY: circuit
+      MINIO_SECRET_KEY: circuit_dev
+      MINIO_BUCKET: circuit-signal
+      MINIO_SECURE: "false"
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      BATCH_PARALLEL_WORKERS: "1"
+      DISABLE_MATRIX_PROFILE: "1"
+    depends_on:
+      postgres: { condition: service_healthy }
+      redis: { condition: service_healthy }
+      minio: { condition: service_started }
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 2g
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    ports:
+      - "3000:80"
+    depends_on:
+      - api
+
+volumes:
+  pgdata:
+  miniodata:

@@ -1,0 +1,2119 @@
+{
+  "version": "1.0",
+  "levels": [
+    "product",
+    "brand",
+    "subcategory",
+    "category",
+    "department"
+  ],
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "node_type": "CANONICAL",
+        "value": "05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+        "confidence": 1.0,
+        "id": "canonical:05dc156e-e5cc-4392-9c88-fe7eeeb7f681"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+        "normalized": "05dc156e e5cc 9c88 fe7eeeb7f681",
+        "pack_info": null,
+        "id": "raw:05dc156e-e5cc-4392-9c88-fe7eeeb7f681"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "brand",
+        "value": "Unclassified",
+        "id": "brand:Unclassified"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "subcategory",
+        "value": "Unclassified",
+        "id": "subcategory:Unclassified"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "category",
+        "value": "Unclassified",
+        "id": "category:Unclassified"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "department",
+        "value": "Unclassified",
+        "id": "department:Unclassified"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+        "confidence": 1.0,
+        "id": "canonical:0c9e7fe3-3ed5-493b-8996-261ae8fa91e0"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+        "normalized": "0c9e7fe3 3ed5 493b 261ae8fa91e0",
+        "pack_info": null,
+        "id": "raw:0c9e7fe3-3ed5-493b-8996-261ae8fa91e0"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+        "confidence": 1.0,
+        "id": "canonical:0ef40565-b3ea-45aa-9d78-2ff6f24ecca9"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+        "normalized": "0ef40565 b3ea 45aa 9d78 2ff6f24ecca9",
+        "pack_info": null,
+        "id": "raw:0ef40565-b3ea-45aa-9d78-2ff6f24ecca9"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "13967e97-24cb-43c2-90f9-828a33d4fc54",
+        "confidence": 1.0,
+        "id": "canonical:13967e97-24cb-43c2-90f9-828a33d4fc54"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "13967e97-24cb-43c2-90f9-828a33d4fc54",
+        "normalized": "13967e97 24cb 43c2 90f9 828a33d4fc54",
+        "pack_info": null,
+        "id": "raw:13967e97-24cb-43c2-90f9-828a33d4fc54"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "18b67a17-34e9-41a4-8d56-5d6447090cd1",
+        "confidence": 1.0,
+        "id": "canonical:18b67a17-34e9-41a4-8d56-5d6447090cd1"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "18b67a17-34e9-41a4-8d56-5d6447090cd1",
+        "normalized": "18b67a17 34e9 41a4 8d56 5d6447090cd1",
+        "pack_info": null,
+        "id": "raw:18b67a17-34e9-41a4-8d56-5d6447090cd1"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+        "confidence": 1.0,
+        "id": "canonical:1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+        "normalized": "1b542b51 5dd6 4d8d bc8c dcf75ab27b6d",
+        "pack_info": null,
+        "id": "raw:1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+        "confidence": 1.0,
+        "id": "canonical:1d7e8977-a8cf-48ed-bbbb-207bb4d072a2"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+        "normalized": "1d7e8977 a8cf 48ed bbbb 207bb4d072a2",
+        "pack_info": null,
+        "id": "raw:1d7e8977-a8cf-48ed-bbbb-207bb4d072a2"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "22402b8d-115c-4e65-a9e2-638148eb6734",
+        "confidence": 1.0,
+        "id": "canonical:22402b8d-115c-4e65-a9e2-638148eb6734"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "22402b8d-115c-4e65-a9e2-638148eb6734",
+        "normalized": "22402b8d 115c 4e65 a9e2 638148eb6734",
+        "pack_info": null,
+        "id": "raw:22402b8d-115c-4e65-a9e2-638148eb6734"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+        "confidence": 1.0,
+        "id": "canonical:2766d0e2-041c-4cde-8b8c-52b37d84ddc3"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+        "normalized": "2766d0e2 041c 4cde 8b8c 52b37d84ddc3",
+        "pack_info": null,
+        "id": "raw:2766d0e2-041c-4cde-8b8c-52b37d84ddc3"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "285f085f-016b-4de9-a9d2-59bef1c56ed5",
+        "confidence": 1.0,
+        "id": "canonical:285f085f-016b-4de9-a9d2-59bef1c56ed5"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "285f085f-016b-4de9-a9d2-59bef1c56ed5",
+        "normalized": "285f085f 016b 4de9 a9d2 59bef1c56ed5",
+        "pack_info": null,
+        "id": "raw:285f085f-016b-4de9-a9d2-59bef1c56ed5"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "28dcfe60-d9fb-4a25-86e1-48be3bada076",
+        "confidence": 1.0,
+        "id": "canonical:28dcfe60-d9fb-4a25-86e1-48be3bada076"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "28dcfe60-d9fb-4a25-86e1-48be3bada076",
+        "normalized": "28dcfe60 d9fb 4a25 86e1 48be3bada076",
+        "pack_info": null,
+        "id": "raw:28dcfe60-d9fb-4a25-86e1-48be3bada076"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "2a3d7745-473c-4d88-bd52-b38574ac1261",
+        "confidence": 1.0,
+        "id": "canonical:2a3d7745-473c-4d88-bd52-b38574ac1261"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "2a3d7745-473c-4d88-bd52-b38574ac1261",
+        "normalized": "2a3d7745 473c 4d88 bd52 b38574ac1261",
+        "pack_info": null,
+        "id": "raw:2a3d7745-473c-4d88-bd52-b38574ac1261"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "300fc1d5-7ba1-456c-a778-3da81083e69c",
+        "confidence": 1.0,
+        "id": "canonical:300fc1d5-7ba1-456c-a778-3da81083e69c"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "300fc1d5-7ba1-456c-a778-3da81083e69c",
+        "normalized": "300fc1d5 7ba1 456c a778 3da81083e69c",
+        "pack_info": null,
+        "id": "raw:300fc1d5-7ba1-456c-a778-3da81083e69c"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+        "confidence": 1.0,
+        "id": "canonical:378bc0e3-734f-43dd-a826-88b18d9e8fdd"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+        "normalized": "378bc0e3 734f 43dd a826 88b18d9e8fdd",
+        "pack_info": null,
+        "id": "raw:378bc0e3-734f-43dd-a826-88b18d9e8fdd"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "39c58da1-2114-4602-89b1-b74c837f6278",
+        "confidence": 1.0,
+        "id": "canonical:39c58da1-2114-4602-89b1-b74c837f6278"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "39c58da1-2114-4602-89b1-b74c837f6278",
+        "normalized": "39c58da1 89b1 b74c837f6278",
+        "pack_info": null,
+        "id": "raw:39c58da1-2114-4602-89b1-b74c837f6278"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "3aa9b1d9-5265-4021-b679-03047eb7f901",
+        "confidence": 1.0,
+        "id": "canonical:3aa9b1d9-5265-4021-b679-03047eb7f901"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "3aa9b1d9-5265-4021-b679-03047eb7f901",
+        "normalized": "3aa9b1d9 b679 03047eb7f901",
+        "pack_info": null,
+        "id": "raw:3aa9b1d9-5265-4021-b679-03047eb7f901"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+        "confidence": 1.0,
+        "id": "canonical:3e26ec76-b6ab-4a88-9b2c-b8a833c95471"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+        "normalized": "3e26ec76 b6ab 4a88 9b2c b8a833c95471",
+        "pack_info": null,
+        "id": "raw:3e26ec76-b6ab-4a88-9b2c-b8a833c95471"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "4136467a-3fec-452d-a168-6603c7394bdb",
+        "confidence": 1.0,
+        "id": "canonical:4136467a-3fec-452d-a168-6603c7394bdb"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "4136467a-3fec-452d-a168-6603c7394bdb",
+        "normalized": "4136467a 3fec 452d a168 6603c7394bdb",
+        "pack_info": null,
+        "id": "raw:4136467a-3fec-452d-a168-6603c7394bdb"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "423acfcb-2ad5-4267-89c9-e94460be7026",
+        "confidence": 1.0,
+        "id": "canonical:423acfcb-2ad5-4267-89c9-e94460be7026"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "423acfcb-2ad5-4267-89c9-e94460be7026",
+        "normalized": "423acfcb 2ad5 89c9 e94460be7026",
+        "pack_info": null,
+        "id": "raw:423acfcb-2ad5-4267-89c9-e94460be7026"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+        "confidence": 1.0,
+        "id": "canonical:42dffc5b-b7dd-4d39-8770-7a447fd22fe5"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+        "normalized": "42dffc5b b7dd 4d39 7a447fd22fe5",
+        "pack_info": null,
+        "id": "raw:42dffc5b-b7dd-4d39-8770-7a447fd22fe5"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+        "confidence": 1.0,
+        "id": "canonical:42f6a902-4a2f-4e7e-8709-4a240f5830c5"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+        "normalized": "42f6a902 4a2f 4e7e 4a240f5830c5",
+        "pack_info": null,
+        "id": "raw:42f6a902-4a2f-4e7e-8709-4a240f5830c5"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+        "confidence": 1.0,
+        "id": "canonical:487dbe4e-b411-4209-84c4-da8fa3b44e3e"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+        "normalized": "487dbe4e b411 84c4 da8fa3b44e3e",
+        "pack_info": null,
+        "id": "raw:487dbe4e-b411-4209-84c4-da8fa3b44e3e"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "491a3128-adf0-4fea-910a-59142afa8b59",
+        "confidence": 1.0,
+        "id": "canonical:491a3128-adf0-4fea-910a-59142afa8b59"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "491a3128-adf0-4fea-910a-59142afa8b59",
+        "normalized": "491a3128 adf0 4fea 910a 59142afa8b59",
+        "pack_info": null,
+        "id": "raw:491a3128-adf0-4fea-910a-59142afa8b59"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+        "confidence": 1.0,
+        "id": "canonical:535cd80c-4ba1-4482-9d40-2a163ce360a8"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+        "normalized": "535cd80c 4ba1 9d40 2a163ce360a8",
+        "pack_info": null,
+        "id": "raw:535cd80c-4ba1-4482-9d40-2a163ce360a8"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "5a551de9-0670-460c-b7c3-758236d8a879",
+        "confidence": 1.0,
+        "id": "canonical:5a551de9-0670-460c-b7c3-758236d8a879"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "5a551de9-0670-460c-b7c3-758236d8a879",
+        "normalized": "5a551de9 460c b7c3 758236d8a879",
+        "pack_info": null,
+        "id": "raw:5a551de9-0670-460c-b7c3-758236d8a879"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+        "confidence": 1.0,
+        "id": "canonical:5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+        "normalized": "5f6e7ff0 1e39 4d1f 8f5a b1152e0f63b6",
+        "pack_info": null,
+        "id": "raw:5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+        "confidence": 1.0,
+        "id": "canonical:60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+        "normalized": "60fc6c5f f8e1 423b b3ac cefb0e8c1fb3",
+        "pack_info": null,
+        "id": "raw:60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "618cd7d1-72ab-4ef9-9166-5e5a03312742",
+        "confidence": 1.0,
+        "id": "canonical:618cd7d1-72ab-4ef9-9166-5e5a03312742"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "618cd7d1-72ab-4ef9-9166-5e5a03312742",
+        "normalized": "618cd7d1 72ab 4ef9 5e5a03312742",
+        "pack_info": null,
+        "id": "raw:618cd7d1-72ab-4ef9-9166-5e5a03312742"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "62d8203a-e913-426b-a195-fd18ed486662",
+        "confidence": 0.917,
+        "id": "canonical:62d8203a-e913-426b-a195-fd18ed486662"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "62d8203a-e913-426b-a195-fd18ed482222",
+        "normalized": "62d8203a e913 426b a195 fd18ed482222",
+        "pack_info": null,
+        "id": "raw:62d8203a-e913-426b-a195-fd18ed482222"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "62d8203a-e913-426b-a195-fd18ed486662",
+        "normalized": "62d8203a e913 426b a195 fd18ed486662",
+        "pack_info": null,
+        "id": "raw:62d8203a-e913-426b-a195-fd18ed486662"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+        "confidence": 1.0,
+        "id": "canonical:6a483545-eb5d-4cc6-8af1-435751a5f0bf"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+        "normalized": "6a483545 eb5d 4cc6 8af1 435751a5f0bf",
+        "pack_info": null,
+        "id": "raw:6a483545-eb5d-4cc6-8af1-435751a5f0bf"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+        "confidence": 1.0,
+        "id": "canonical:6aff6333-480e-4749-89a9-7dd1dd8d2f4e"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+        "normalized": "6aff6333 480e 89a9 7dd1dd8d2f4e",
+        "pack_info": null,
+        "id": "raw:6aff6333-480e-4749-89a9-7dd1dd8d2f4e"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+        "confidence": 1.0,
+        "id": "canonical:6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+        "normalized": "6d47605f ed9a 4fbe 9bf0 8df3a25bdd4d",
+        "pack_info": null,
+        "id": "raw:6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+        "confidence": 1.0,
+        "id": "canonical:6fb66d85-b395-4cfc-81ee-c3438d711ce2"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+        "normalized": "6fb66d85 b395 4cfc 81ee c3438d711ce2",
+        "pack_info": null,
+        "id": "raw:6fb66d85-b395-4cfc-81ee-c3438d711ce2"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "74803c60-bec8-44c6-82fb-4cdf00555529",
+        "confidence": 1.0,
+        "id": "canonical:74803c60-bec8-44c6-82fb-4cdf00555529"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "74803c60-bec8-44c6-82fb-4cdf00555529",
+        "normalized": "74803c60 bec8 44c6 82fb 4cdf00555529",
+        "pack_info": null,
+        "id": "raw:74803c60-bec8-44c6-82fb-4cdf00555529"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "77d51a4f-1dfb-4879-b1b6-2327609532bd",
+        "confidence": 1.0,
+        "id": "canonical:77d51a4f-1dfb-4879-b1b6-2327609532bd"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "77d51a4f-1dfb-4879-b1b6-2327609532bd",
+        "normalized": "77d51a4f 1dfb b1b6 2327609532bd",
+        "pack_info": null,
+        "id": "raw:77d51a4f-1dfb-4879-b1b6-2327609532bd"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+        "confidence": 0.889,
+        "id": "canonical:7db88623-46d8-40f3-a202-0e55eaaa2222"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "7db88623-46d8-40f3-a202-0e55eaaa0bcb",
+        "normalized": "7db88623 46d8 40f3 a202 0e55eaaa0bcb",
+        "pack_info": null,
+        "id": "raw:7db88623-46d8-40f3-a202-0e55eaaa0bcb"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+        "normalized": "7db88623 46d8 40f3 a202 0e55eaaa2222",
+        "pack_info": null,
+        "id": "raw:7db88623-46d8-40f3-a202-0e55eaaa2222"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+        "confidence": 1.0,
+        "id": "canonical:7f65ca0f-3709-454b-9ff8-c9b45ffb553d"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+        "normalized": "7f65ca0f 454b 9ff8 c9b45ffb553d",
+        "pack_info": null,
+        "id": "raw:7f65ca0f-3709-454b-9ff8-c9b45ffb553d"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "8141c2dc-31f7-4733-a1c5-46ac31473a80",
+        "confidence": 1.0,
+        "id": "canonical:8141c2dc-31f7-4733-a1c5-46ac31473a80"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "8141c2dc-31f7-4733-a1c5-46ac31473a80",
+        "normalized": "8141c2dc 31f7 a1c5 46ac31473a80",
+        "pack_info": null,
+        "id": "raw:8141c2dc-31f7-4733-a1c5-46ac31473a80"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "824e9f55-0671-4d78-989a-f2a56791e8fc",
+        "confidence": 1.0,
+        "id": "canonical:824e9f55-0671-4d78-989a-f2a56791e8fc"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "824e9f55-0671-4d78-989a-f2a56791e8fc",
+        "normalized": "824e9f55 4d78 989a f2a56791e8fc",
+        "pack_info": null,
+        "id": "raw:824e9f55-0671-4d78-989a-f2a56791e8fc"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "84c01cb1-385e-4dea-834f-a1f34502e856",
+        "confidence": 1.0,
+        "id": "canonical:84c01cb1-385e-4dea-834f-a1f34502e856"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "84c01cb1-385e-4dea-834f-a1f34502e856",
+        "normalized": "84c01cb1 385e 4dea 834f a1f34502e856",
+        "pack_info": null,
+        "id": "raw:84c01cb1-385e-4dea-834f-a1f34502e856"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+        "confidence": 1.0,
+        "id": "canonical:8a50c10a-021d-464f-b44c-b5c0ecfb4a7c"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+        "normalized": "8a50c10a 021d 464f b44c b5c0ecfb4a7c",
+        "pack_info": null,
+        "id": "raw:8a50c10a-021d-464f-b44c-b5c0ecfb4a7c"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "8d3080de-b1eb-48f4-800c-f7849cac48e0",
+        "confidence": 1.0,
+        "id": "canonical:8d3080de-b1eb-48f4-800c-f7849cac48e0"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "8d3080de-b1eb-48f4-800c-f7849cac48e0",
+        "normalized": "8d3080de b1eb 48f4 800c f7849cac48e0",
+        "pack_info": null,
+        "id": "raw:8d3080de-b1eb-48f4-800c-f7849cac48e0"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "9141a8f0-2341-4ef7-80ab-0de741be0f37",
+        "confidence": 1.0,
+        "id": "canonical:9141a8f0-2341-4ef7-80ab-0de741be0f37"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "9141a8f0-2341-4ef7-80ab-0de741be0f37",
+        "normalized": "9141a8f0 4ef7 80ab 0de741be0f37",
+        "pack_info": null,
+        "id": "raw:9141a8f0-2341-4ef7-80ab-0de741be0f37"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "91982696-458a-477c-b0cf-c6ce55370cc0",
+        "confidence": 1.0,
+        "id": "canonical:91982696-458a-477c-b0cf-c6ce55370cc0"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "91982696-458a-477c-b0cf-c6ce55370cc0",
+        "normalized": "458a 477c b0cf c6ce55370cc0",
+        "pack_info": null,
+        "id": "raw:91982696-458a-477c-b0cf-c6ce55370cc0"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+        "confidence": 1.0,
+        "id": "canonical:967b1ad8-73f1-4d70-ba13-6270359bbb3d"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+        "normalized": "967b1ad8 73f1 4d70 ba13 6270359bbb3d",
+        "pack_info": null,
+        "id": "raw:967b1ad8-73f1-4d70-ba13-6270359bbb3d"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "9adef4a9-9186-47d3-92da-9a58dc48b009",
+        "confidence": 1.0,
+        "id": "canonical:9adef4a9-9186-47d3-92da-9a58dc48b009"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "9adef4a9-9186-47d3-92da-9a58dc48b009",
+        "normalized": "9adef4a9 47d3 92da 9a58dc48b009",
+        "pack_info": null,
+        "id": "raw:9adef4a9-9186-47d3-92da-9a58dc48b009"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "a05b5344-b81c-40bd-8869-14803f095ed5",
+        "confidence": 1.0,
+        "id": "canonical:a05b5344-b81c-40bd-8869-14803f095ed5"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "a05b5344-b81c-40bd-8869-14803f095ed5",
+        "normalized": "a05b5344 b81c 40bd 14803f095ed5",
+        "pack_info": null,
+        "id": "raw:a05b5344-b81c-40bd-8869-14803f095ed5"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+        "confidence": 1.0,
+        "id": "canonical:a64a0732-4992-4d1c-b57e-59c24e9d6a40"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+        "normalized": "a64a0732 4d1c b57e 59c24e9d6a40",
+        "pack_info": null,
+        "id": "raw:a64a0732-4992-4d1c-b57e-59c24e9d6a40"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+        "confidence": 1.0,
+        "id": "canonical:a8731320-8e01-41a2-b6c9-6f9ba7625a80"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+        "normalized": "a8731320 8e01 41a2 b6c9 6f9ba7625a80",
+        "pack_info": null,
+        "id": "raw:a8731320-8e01-41a2-b6c9-6f9ba7625a80"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "a9647544-85ff-4b2e-bbbd-545367f013ae",
+        "confidence": 1.0,
+        "id": "canonical:a9647544-85ff-4b2e-bbbd-545367f013ae"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "a9647544-85ff-4b2e-bbbd-545367f013ae",
+        "normalized": "a9647544 85ff 4b2e bbbd 545367f013ae",
+        "pack_info": null,
+        "id": "raw:a9647544-85ff-4b2e-bbbd-545367f013ae"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+        "confidence": 1.0,
+        "id": "canonical:b34984e6-1214-4c18-a8d7-fdd5180a23bb"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+        "normalized": "b34984e6 4c18 a8d7 fdd5180a23bb",
+        "pack_info": null,
+        "id": "raw:b34984e6-1214-4c18-a8d7-fdd5180a23bb"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "b58ba106-3cfe-4362-8eeb-277c4714e362",
+        "confidence": 1.0,
+        "id": "canonical:b58ba106-3cfe-4362-8eeb-277c4714e362"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "b58ba106-3cfe-4362-8eeb-277c4714e362",
+        "normalized": "b58ba106 3cfe 8eeb 277c4714e362",
+        "pack_info": null,
+        "id": "raw:b58ba106-3cfe-4362-8eeb-277c4714e362"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+        "confidence": 1.0,
+        "id": "canonical:b7b7ed17-5775-4308-8e3a-26e234a2b33b"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+        "normalized": "b7b7ed17 8e3a 26e234a2b33b",
+        "pack_info": null,
+        "id": "raw:b7b7ed17-5775-4308-8e3a-26e234a2b33b"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+        "confidence": 1.0,
+        "id": "canonical:b8d7cf96-f91b-4a79-a07d-92c06cab7564"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+        "normalized": "b8d7cf96 f91b 4a79 a07d 92c06cab7564",
+        "pack_info": null,
+        "id": "raw:b8d7cf96-f91b-4a79-a07d-92c06cab7564"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+        "confidence": 1.0,
+        "id": "canonical:b9fc8f74-6666-4d02-bc61-ba9cac92422d"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+        "normalized": "b9fc8f74 4d02 bc61 ba9cac92422d",
+        "pack_info": null,
+        "id": "raw:b9fc8f74-6666-4d02-bc61-ba9cac92422d"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+        "confidence": 1.0,
+        "id": "canonical:ba7116e2-3156-49a2-a6c6-9a28b6ff8413"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+        "normalized": "ba7116e2 49a2 a6c6 9a28b6ff8413",
+        "pack_info": null,
+        "id": "raw:ba7116e2-3156-49a2-a6c6-9a28b6ff8413"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "bb39c900-0d1e-4295-b467-464e74a617b2",
+        "confidence": 1.0,
+        "id": "canonical:bb39c900-0d1e-4295-b467-464e74a617b2"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "bb39c900-0d1e-4295-b467-464e74a617b2",
+        "normalized": "bb39c900 0d1e b467 464e74a617b2",
+        "pack_info": null,
+        "id": "raw:bb39c900-0d1e-4295-b467-464e74a617b2"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+        "confidence": 1.0,
+        "id": "canonical:be20b2b9-1fba-41d1-b4d8-11dff0d9cefd"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+        "normalized": "be20b2b9 1fba 41d1 b4d8 11dff0d9cefd",
+        "pack_info": null,
+        "id": "raw:be20b2b9-1fba-41d1-b4d8-11dff0d9cefd"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "c67f9964-2436-492c-82c7-7bcc171d0366",
+        "confidence": 1.0,
+        "id": "canonical:c67f9964-2436-492c-82c7-7bcc171d0366"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "c67f9964-2436-492c-82c7-7bcc171d0366",
+        "normalized": "c67f9964 492c 82c7 7bcc171d0366",
+        "pack_info": null,
+        "id": "raw:c67f9964-2436-492c-82c7-7bcc171d0366"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "d316de86-6197-4262-a37c-426b0f47cace",
+        "confidence": 1.0,
+        "id": "canonical:d316de86-6197-4262-a37c-426b0f47cace"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "d316de86-6197-4262-a37c-426b0f47cace",
+        "normalized": "d316de86 a37c 426b0f47cace",
+        "pack_info": null,
+        "id": "raw:d316de86-6197-4262-a37c-426b0f47cace"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "d7bcfedd-488a-4ade-b767-94a902f25e00",
+        "confidence": 1.0,
+        "id": "canonical:d7bcfedd-488a-4ade-b767-94a902f25e00"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "d7bcfedd-488a-4ade-b767-94a902f25e00",
+        "normalized": "d7bcfedd 488a 4ade b767 94a902f25e00",
+        "pack_info": null,
+        "id": "raw:d7bcfedd-488a-4ade-b767-94a902f25e00"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+        "confidence": 1.0,
+        "id": "canonical:d88e69c7-9f8e-4032-8b6b-570d422e0a03"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+        "normalized": "d88e69c7 9f8e 8b6b 570d422e0a03",
+        "pack_info": null,
+        "id": "raw:d88e69c7-9f8e-4032-8b6b-570d422e0a03"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "d92ae9df-0303-4db3-8d7c-c951727b4503",
+        "confidence": 1.0,
+        "id": "canonical:d92ae9df-0303-4db3-8d7c-c951727b4503"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "d92ae9df-0303-4db3-8d7c-c951727b4503",
+        "normalized": "d92ae9df 4db3 8d7c c951727b4503",
+        "pack_info": null,
+        "id": "raw:d92ae9df-0303-4db3-8d7c-c951727b4503"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "da33676a-fa1c-4563-bb37-c324ea403b9c",
+        "confidence": 1.0,
+        "id": "canonical:da33676a-fa1c-4563-bb37-c324ea403b9c"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "da33676a-fa1c-4563-bb37-c324ea403b9c",
+        "normalized": "da33676a fa1c bb37 c324ea403b9c",
+        "pack_info": null,
+        "id": "raw:da33676a-fa1c-4563-bb37-c324ea403b9c"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+        "confidence": 1.0,
+        "id": "canonical:dcab940a-c35b-4d03-b4fe-9e9c7e319ac0"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+        "normalized": "dcab940a c35b 4d03 b4fe 9e9c7e319ac0",
+        "pack_info": null,
+        "id": "raw:dcab940a-c35b-4d03-b4fe-9e9c7e319ac0"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "e0f53218-7146-414d-903a-9ba33f8d9e49",
+        "confidence": 1.0,
+        "id": "canonical:e0f53218-7146-414d-903a-9ba33f8d9e49"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "e0f53218-7146-414d-903a-9ba33f8d9e49",
+        "normalized": "e0f53218 414d 903a 9ba33f8d9e49",
+        "pack_info": null,
+        "id": "raw:e0f53218-7146-414d-903a-9ba33f8d9e49"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "e2230ec5-4e20-443f-9c69-63aea677e495",
+        "confidence": 1.0,
+        "id": "canonical:e2230ec5-4e20-443f-9c69-63aea677e495"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "e2230ec5-4e20-443f-9c69-63aea677e495",
+        "normalized": "e2230ec5 4e20 443f 9c69 63aea677e495",
+        "pack_info": null,
+        "id": "raw:e2230ec5-4e20-443f-9c69-63aea677e495"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+        "confidence": 1.0,
+        "id": "canonical:e39a18e8-a3d4-4739-9cfd-0951a7c34bdb"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+        "normalized": "e39a18e8 a3d4 9cfd 0951a7c34bdb",
+        "pack_info": null,
+        "id": "raw:e39a18e8-a3d4-4739-9cfd-0951a7c34bdb"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "e5b6cab2-9bff-4c77-836b-41ad19241c42",
+        "confidence": 1.0,
+        "id": "canonical:e5b6cab2-9bff-4c77-836b-41ad19241c42"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "e5b6cab2-9bff-4c77-836b-41ad19241c42",
+        "normalized": "e5b6cab2 9bff 4c77 836b 41ad19241c42",
+        "pack_info": null,
+        "id": "raw:e5b6cab2-9bff-4c77-836b-41ad19241c42"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "e9cbc316-78b5-4181-a6ce-15ee866cda21",
+        "confidence": 1.0,
+        "id": "canonical:e9cbc316-78b5-4181-a6ce-15ee866cda21"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "e9cbc316-78b5-4181-a6ce-15ee866cda21",
+        "normalized": "e9cbc316 78b5 a6ce 15ee866cda21",
+        "pack_info": null,
+        "id": "raw:e9cbc316-78b5-4181-a6ce-15ee866cda21"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "eaebf180-2c7b-490a-a915-a125e4250a59",
+        "confidence": 1.0,
+        "id": "canonical:eaebf180-2c7b-490a-a915-a125e4250a59"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "eaebf180-2c7b-490a-a915-a125e4250a59",
+        "normalized": "eaebf180 2c7b 490a a915 a125e4250a59",
+        "pack_info": null,
+        "id": "raw:eaebf180-2c7b-490a-a915-a125e4250a59"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+        "confidence": 1.0,
+        "id": "canonical:ed359d61-b0e6-40d8-a517-e41b6298ae2c"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+        "normalized": "ed359d61 b0e6 40d8 a517 e41b6298ae2c",
+        "pack_info": null,
+        "id": "raw:ed359d61-b0e6-40d8-a517-e41b6298ae2c"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "eecdc853-135e-448d-88cc-9f209084613b",
+        "confidence": 1.0,
+        "id": "canonical:eecdc853-135e-448d-88cc-9f209084613b"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "eecdc853-135e-448d-88cc-9f209084613b",
+        "normalized": "eecdc853 135e 448d 88cc 9f209084613b",
+        "pack_info": null,
+        "id": "raw:eecdc853-135e-448d-88cc-9f209084613b"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+        "confidence": 1.0,
+        "id": "canonical:f9d4b974-3b7c-4913-9ea3-33a64a0ffae1"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+        "normalized": "f9d4b974 3b7c 9ea3 33a64a0ffae1",
+        "pack_info": null,
+        "id": "raw:f9d4b974-3b7c-4913-9ea3-33a64a0ffae1"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "fec39756-9457-4b58-8f29-45a57e0acb96",
+        "confidence": 1.0,
+        "id": "canonical:fec39756-9457-4b58-8f29-45a57e0acb96"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "fec39756-9457-4b58-8f29-45a57e0acb96",
+        "normalized": "fec39756 4b58 8f29 45a57e0acb96",
+        "pack_info": null,
+        "id": "raw:fec39756-9457-4b58-8f29-45a57e0acb96"
+      }
+    ],
+    "edges": [
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+        "target": "canonical:05dc156e-e5cc-4392-9c88-fe7eeeb7f681"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "brand",
+        "to_level": "subcategory",
+        "source": "brand:Unclassified",
+        "target": "subcategory:Unclassified"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "subcategory",
+        "to_level": "category",
+        "source": "subcategory:Unclassified",
+        "target": "category:Unclassified"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "category",
+        "to_level": "department",
+        "source": "category:Unclassified",
+        "target": "department:Unclassified"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+        "target": "canonical:0c9e7fe3-3ed5-493b-8996-261ae8fa91e0"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+        "target": "canonical:0ef40565-b3ea-45aa-9d78-2ff6f24ecca9"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:13967e97-24cb-43c2-90f9-828a33d4fc54",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:13967e97-24cb-43c2-90f9-828a33d4fc54",
+        "target": "canonical:13967e97-24cb-43c2-90f9-828a33d4fc54"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:18b67a17-34e9-41a4-8d56-5d6447090cd1",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:18b67a17-34e9-41a4-8d56-5d6447090cd1",
+        "target": "canonical:18b67a17-34e9-41a4-8d56-5d6447090cd1"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+        "target": "canonical:1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+        "target": "canonical:1d7e8977-a8cf-48ed-bbbb-207bb4d072a2"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:22402b8d-115c-4e65-a9e2-638148eb6734",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:22402b8d-115c-4e65-a9e2-638148eb6734",
+        "target": "canonical:22402b8d-115c-4e65-a9e2-638148eb6734"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+        "target": "canonical:2766d0e2-041c-4cde-8b8c-52b37d84ddc3"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:285f085f-016b-4de9-a9d2-59bef1c56ed5",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:285f085f-016b-4de9-a9d2-59bef1c56ed5",
+        "target": "canonical:285f085f-016b-4de9-a9d2-59bef1c56ed5"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:28dcfe60-d9fb-4a25-86e1-48be3bada076",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:28dcfe60-d9fb-4a25-86e1-48be3bada076",
+        "target": "canonical:28dcfe60-d9fb-4a25-86e1-48be3bada076"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:2a3d7745-473c-4d88-bd52-b38574ac1261",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:2a3d7745-473c-4d88-bd52-b38574ac1261",
+        "target": "canonical:2a3d7745-473c-4d88-bd52-b38574ac1261"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:300fc1d5-7ba1-456c-a778-3da81083e69c",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:300fc1d5-7ba1-456c-a778-3da81083e69c",
+        "target": "canonical:300fc1d5-7ba1-456c-a778-3da81083e69c"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+        "target": "canonical:378bc0e3-734f-43dd-a826-88b18d9e8fdd"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:39c58da1-2114-4602-89b1-b74c837f6278",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:39c58da1-2114-4602-89b1-b74c837f6278",
+        "target": "canonical:39c58da1-2114-4602-89b1-b74c837f6278"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:3aa9b1d9-5265-4021-b679-03047eb7f901",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:3aa9b1d9-5265-4021-b679-03047eb7f901",
+        "target": "canonical:3aa9b1d9-5265-4021-b679-03047eb7f901"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+        "target": "canonical:3e26ec76-b6ab-4a88-9b2c-b8a833c95471"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:4136467a-3fec-452d-a168-6603c7394bdb",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:4136467a-3fec-452d-a168-6603c7394bdb",
+        "target": "canonical:4136467a-3fec-452d-a168-6603c7394bdb"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:423acfcb-2ad5-4267-89c9-e94460be7026",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:423acfcb-2ad5-4267-89c9-e94460be7026",
+        "target": "canonical:423acfcb-2ad5-4267-89c9-e94460be7026"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+        "target": "canonical:42dffc5b-b7dd-4d39-8770-7a447fd22fe5"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+        "target": "canonical:42f6a902-4a2f-4e7e-8709-4a240f5830c5"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+        "target": "canonical:487dbe4e-b411-4209-84c4-da8fa3b44e3e"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:491a3128-adf0-4fea-910a-59142afa8b59",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:491a3128-adf0-4fea-910a-59142afa8b59",
+        "target": "canonical:491a3128-adf0-4fea-910a-59142afa8b59"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:535cd80c-4ba1-4482-9d40-2a163ce360a8",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:535cd80c-4ba1-4482-9d40-2a163ce360a8",
+        "target": "canonical:535cd80c-4ba1-4482-9d40-2a163ce360a8"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:5a551de9-0670-460c-b7c3-758236d8a879",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:5a551de9-0670-460c-b7c3-758236d8a879",
+        "target": "canonical:5a551de9-0670-460c-b7c3-758236d8a879"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+        "target": "canonical:5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+        "target": "canonical:60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:618cd7d1-72ab-4ef9-9166-5e5a03312742",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:618cd7d1-72ab-4ef9-9166-5e5a03312742",
+        "target": "canonical:618cd7d1-72ab-4ef9-9166-5e5a03312742"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:62d8203a-e913-426b-a195-fd18ed486662",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:62d8203a-e913-426b-a195-fd18ed482222",
+        "target": "canonical:62d8203a-e913-426b-a195-fd18ed486662"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:62d8203a-e913-426b-a195-fd18ed486662",
+        "target": "canonical:62d8203a-e913-426b-a195-fd18ed486662"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+        "target": "canonical:6a483545-eb5d-4cc6-8af1-435751a5f0bf"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+        "target": "canonical:6aff6333-480e-4749-89a9-7dd1dd8d2f4e"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+        "target": "canonical:6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+        "target": "canonical:6fb66d85-b395-4cfc-81ee-c3438d711ce2"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:74803c60-bec8-44c6-82fb-4cdf00555529",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:74803c60-bec8-44c6-82fb-4cdf00555529",
+        "target": "canonical:74803c60-bec8-44c6-82fb-4cdf00555529"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:77d51a4f-1dfb-4879-b1b6-2327609532bd",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:77d51a4f-1dfb-4879-b1b6-2327609532bd",
+        "target": "canonical:77d51a4f-1dfb-4879-b1b6-2327609532bd"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:7db88623-46d8-40f3-a202-0e55eaaa2222",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:7db88623-46d8-40f3-a202-0e55eaaa0bcb",
+        "target": "canonical:7db88623-46d8-40f3-a202-0e55eaaa2222"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:7db88623-46d8-40f3-a202-0e55eaaa2222",
+        "target": "canonical:7db88623-46d8-40f3-a202-0e55eaaa2222"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+        "target": "canonical:7f65ca0f-3709-454b-9ff8-c9b45ffb553d"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:8141c2dc-31f7-4733-a1c5-46ac31473a80",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:8141c2dc-31f7-4733-a1c5-46ac31473a80",
+        "target": "canonical:8141c2dc-31f7-4733-a1c5-46ac31473a80"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:824e9f55-0671-4d78-989a-f2a56791e8fc",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:824e9f55-0671-4d78-989a-f2a56791e8fc",
+        "target": "canonical:824e9f55-0671-4d78-989a-f2a56791e8fc"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:84c01cb1-385e-4dea-834f-a1f34502e856",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:84c01cb1-385e-4dea-834f-a1f34502e856",
+        "target": "canonical:84c01cb1-385e-4dea-834f-a1f34502e856"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+        "target": "canonical:8a50c10a-021d-464f-b44c-b5c0ecfb4a7c"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:8d3080de-b1eb-48f4-800c-f7849cac48e0",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:8d3080de-b1eb-48f4-800c-f7849cac48e0",
+        "target": "canonical:8d3080de-b1eb-48f4-800c-f7849cac48e0"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:9141a8f0-2341-4ef7-80ab-0de741be0f37",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:9141a8f0-2341-4ef7-80ab-0de741be0f37",
+        "target": "canonical:9141a8f0-2341-4ef7-80ab-0de741be0f37"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:91982696-458a-477c-b0cf-c6ce55370cc0",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:91982696-458a-477c-b0cf-c6ce55370cc0",
+        "target": "canonical:91982696-458a-477c-b0cf-c6ce55370cc0"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+        "target": "canonical:967b1ad8-73f1-4d70-ba13-6270359bbb3d"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:9adef4a9-9186-47d3-92da-9a58dc48b009",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:9adef4a9-9186-47d3-92da-9a58dc48b009",
+        "target": "canonical:9adef4a9-9186-47d3-92da-9a58dc48b009"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:a05b5344-b81c-40bd-8869-14803f095ed5",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:a05b5344-b81c-40bd-8869-14803f095ed5",
+        "target": "canonical:a05b5344-b81c-40bd-8869-14803f095ed5"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+        "target": "canonical:a64a0732-4992-4d1c-b57e-59c24e9d6a40"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+        "target": "canonical:a8731320-8e01-41a2-b6c9-6f9ba7625a80"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:a9647544-85ff-4b2e-bbbd-545367f013ae",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:a9647544-85ff-4b2e-bbbd-545367f013ae",
+        "target": "canonical:a9647544-85ff-4b2e-bbbd-545367f013ae"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+        "target": "canonical:b34984e6-1214-4c18-a8d7-fdd5180a23bb"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:b58ba106-3cfe-4362-8eeb-277c4714e362",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:b58ba106-3cfe-4362-8eeb-277c4714e362",
+        "target": "canonical:b58ba106-3cfe-4362-8eeb-277c4714e362"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+        "target": "canonical:b7b7ed17-5775-4308-8e3a-26e234a2b33b"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+        "target": "canonical:b8d7cf96-f91b-4a79-a07d-92c06cab7564"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+        "target": "canonical:b9fc8f74-6666-4d02-bc61-ba9cac92422d"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+        "target": "canonical:ba7116e2-3156-49a2-a6c6-9a28b6ff8413"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:bb39c900-0d1e-4295-b467-464e74a617b2",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:bb39c900-0d1e-4295-b467-464e74a617b2",
+        "target": "canonical:bb39c900-0d1e-4295-b467-464e74a617b2"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+        "target": "canonical:be20b2b9-1fba-41d1-b4d8-11dff0d9cefd"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:c67f9964-2436-492c-82c7-7bcc171d0366",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:c67f9964-2436-492c-82c7-7bcc171d0366",
+        "target": "canonical:c67f9964-2436-492c-82c7-7bcc171d0366"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:d316de86-6197-4262-a37c-426b0f47cace",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:d316de86-6197-4262-a37c-426b0f47cace",
+        "target": "canonical:d316de86-6197-4262-a37c-426b0f47cace"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:d7bcfedd-488a-4ade-b767-94a902f25e00",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:d7bcfedd-488a-4ade-b767-94a902f25e00",
+        "target": "canonical:d7bcfedd-488a-4ade-b767-94a902f25e00"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+        "target": "canonical:d88e69c7-9f8e-4032-8b6b-570d422e0a03"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:d92ae9df-0303-4db3-8d7c-c951727b4503",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:d92ae9df-0303-4db3-8d7c-c951727b4503",
+        "target": "canonical:d92ae9df-0303-4db3-8d7c-c951727b4503"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:da33676a-fa1c-4563-bb37-c324ea403b9c",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:da33676a-fa1c-4563-bb37-c324ea403b9c",
+        "target": "canonical:da33676a-fa1c-4563-bb37-c324ea403b9c"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+        "target": "canonical:dcab940a-c35b-4d03-b4fe-9e9c7e319ac0"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:e0f53218-7146-414d-903a-9ba33f8d9e49",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:e0f53218-7146-414d-903a-9ba33f8d9e49",
+        "target": "canonical:e0f53218-7146-414d-903a-9ba33f8d9e49"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:e2230ec5-4e20-443f-9c69-63aea677e495",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:e2230ec5-4e20-443f-9c69-63aea677e495",
+        "target": "canonical:e2230ec5-4e20-443f-9c69-63aea677e495"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+        "target": "canonical:e39a18e8-a3d4-4739-9cfd-0951a7c34bdb"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:e5b6cab2-9bff-4c77-836b-41ad19241c42",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:e5b6cab2-9bff-4c77-836b-41ad19241c42",
+        "target": "canonical:e5b6cab2-9bff-4c77-836b-41ad19241c42"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:e9cbc316-78b5-4181-a6ce-15ee866cda21",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:e9cbc316-78b5-4181-a6ce-15ee866cda21",
+        "target": "canonical:e9cbc316-78b5-4181-a6ce-15ee866cda21"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:eaebf180-2c7b-490a-a915-a125e4250a59",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:eaebf180-2c7b-490a-a915-a125e4250a59",
+        "target": "canonical:eaebf180-2c7b-490a-a915-a125e4250a59"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+        "target": "canonical:ed359d61-b0e6-40d8-a517-e41b6298ae2c"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:eecdc853-135e-448d-88cc-9f209084613b",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:eecdc853-135e-448d-88cc-9f209084613b",
+        "target": "canonical:eecdc853-135e-448d-88cc-9f209084613b"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+        "target": "canonical:f9d4b974-3b7c-4913-9ea3-33a64a0ffae1"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:fec39756-9457-4b58-8f29-45a57e0acb96",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:fec39756-9457-4b58-8f29-45a57e0acb96",
+        "target": "canonical:fec39756-9457-4b58-8f29-45a57e0acb96"
+      }
+    ]
+  },
+  "raw_to_canonical": {
+    "05dc156e-e5cc-4392-9c88-fe7eeeb7f681": "05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+    "05dc156e e5cc 9c88 fe7eeeb7f681": "05dc156e-e5cc-4392-9c88-fe7eeeb7f681",
+    "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0": "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+    "0c9e7fe3 3ed5 493b 261ae8fa91e0": "0c9e7fe3-3ed5-493b-8996-261ae8fa91e0",
+    "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9": "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+    "0ef40565 b3ea 45aa 9d78 2ff6f24ecca9": "0ef40565-b3ea-45aa-9d78-2ff6f24ecca9",
+    "13967e97-24cb-43c2-90f9-828a33d4fc54": "13967e97-24cb-43c2-90f9-828a33d4fc54",
+    "13967e97 24cb 43c2 90f9 828a33d4fc54": "13967e97-24cb-43c2-90f9-828a33d4fc54",
+    "18b67a17-34e9-41a4-8d56-5d6447090cd1": "18b67a17-34e9-41a4-8d56-5d6447090cd1",
+    "18b67a17 34e9 41a4 8d56 5d6447090cd1": "18b67a17-34e9-41a4-8d56-5d6447090cd1",
+    "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d": "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+    "1b542b51 5dd6 4d8d bc8c dcf75ab27b6d": "1b542b51-5dd6-4d8d-bc8c-dcf75ab27b6d",
+    "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2": "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+    "1d7e8977 a8cf 48ed bbbb 207bb4d072a2": "1d7e8977-a8cf-48ed-bbbb-207bb4d072a2",
+    "22402b8d-115c-4e65-a9e2-638148eb6734": "22402b8d-115c-4e65-a9e2-638148eb6734",
+    "22402b8d 115c 4e65 a9e2 638148eb6734": "22402b8d-115c-4e65-a9e2-638148eb6734",
+    "2766d0e2-041c-4cde-8b8c-52b37d84ddc3": "2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+    "2766d0e2 041c 4cde 8b8c 52b37d84ddc3": "2766d0e2-041c-4cde-8b8c-52b37d84ddc3",
+    "285f085f-016b-4de9-a9d2-59bef1c56ed5": "285f085f-016b-4de9-a9d2-59bef1c56ed5",
+    "285f085f 016b 4de9 a9d2 59bef1c56ed5": "285f085f-016b-4de9-a9d2-59bef1c56ed5",
+    "28dcfe60-d9fb-4a25-86e1-48be3bada076": "28dcfe60-d9fb-4a25-86e1-48be3bada076",
+    "28dcfe60 d9fb 4a25 86e1 48be3bada076": "28dcfe60-d9fb-4a25-86e1-48be3bada076",
+    "2a3d7745-473c-4d88-bd52-b38574ac1261": "2a3d7745-473c-4d88-bd52-b38574ac1261",
+    "2a3d7745 473c 4d88 bd52 b38574ac1261": "2a3d7745-473c-4d88-bd52-b38574ac1261",
+    "300fc1d5-7ba1-456c-a778-3da81083e69c": "300fc1d5-7ba1-456c-a778-3da81083e69c",
+    "300fc1d5 7ba1 456c a778 3da81083e69c": "300fc1d5-7ba1-456c-a778-3da81083e69c",
+    "378bc0e3-734f-43dd-a826-88b18d9e8fdd": "378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+    "378bc0e3 734f 43dd a826 88b18d9e8fdd": "378bc0e3-734f-43dd-a826-88b18d9e8fdd",
+    "39c58da1-2114-4602-89b1-b74c837f6278": "39c58da1-2114-4602-89b1-b74c837f6278",
+    "39c58da1 89b1 b74c837f6278": "39c58da1-2114-4602-89b1-b74c837f6278",
+    "3aa9b1d9-5265-4021-b679-03047eb7f901": "3aa9b1d9-5265-4021-b679-03047eb7f901",
+    "3aa9b1d9 b679 03047eb7f901": "3aa9b1d9-5265-4021-b679-03047eb7f901",
+    "3e26ec76-b6ab-4a88-9b2c-b8a833c95471": "3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+    "3e26ec76 b6ab 4a88 9b2c b8a833c95471": "3e26ec76-b6ab-4a88-9b2c-b8a833c95471",
+    "4136467a-3fec-452d-a168-6603c7394bdb": "4136467a-3fec-452d-a168-6603c7394bdb",
+    "4136467a 3fec 452d a168 6603c7394bdb": "4136467a-3fec-452d-a168-6603c7394bdb",
+    "423acfcb-2ad5-4267-89c9-e94460be7026": "423acfcb-2ad5-4267-89c9-e94460be7026",
+    "423acfcb 2ad5 89c9 e94460be7026": "423acfcb-2ad5-4267-89c9-e94460be7026",
+    "42dffc5b-b7dd-4d39-8770-7a447fd22fe5": "42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+    "42dffc5b b7dd 4d39 7a447fd22fe5": "42dffc5b-b7dd-4d39-8770-7a447fd22fe5",
+    "42f6a902-4a2f-4e7e-8709-4a240f5830c5": "42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+    "42f6a902 4a2f 4e7e 4a240f5830c5": "42f6a902-4a2f-4e7e-8709-4a240f5830c5",
+    "487dbe4e-b411-4209-84c4-da8fa3b44e3e": "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+    "487dbe4e b411 84c4 da8fa3b44e3e": "487dbe4e-b411-4209-84c4-da8fa3b44e3e",
+    "491a3128-adf0-4fea-910a-59142afa8b59": "491a3128-adf0-4fea-910a-59142afa8b59",
+    "491a3128 adf0 4fea 910a 59142afa8b59": "491a3128-adf0-4fea-910a-59142afa8b59",
+    "535cd80c-4ba1-4482-9d40-2a163ce360a8": "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+    "535cd80c 4ba1 9d40 2a163ce360a8": "535cd80c-4ba1-4482-9d40-2a163ce360a8",
+    "5a551de9-0670-460c-b7c3-758236d8a879": "5a551de9-0670-460c-b7c3-758236d8a879",
+    "5a551de9 460c b7c3 758236d8a879": "5a551de9-0670-460c-b7c3-758236d8a879",
+    "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6": "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+    "5f6e7ff0 1e39 4d1f 8f5a b1152e0f63b6": "5f6e7ff0-1e39-4d1f-8f5a-b1152e0f63b6",
+    "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3": "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+    "60fc6c5f f8e1 423b b3ac cefb0e8c1fb3": "60fc6c5f-f8e1-423b-b3ac-cefb0e8c1fb3",
+    "618cd7d1-72ab-4ef9-9166-5e5a03312742": "618cd7d1-72ab-4ef9-9166-5e5a03312742",
+    "618cd7d1 72ab 4ef9 5e5a03312742": "618cd7d1-72ab-4ef9-9166-5e5a03312742",
+    "62d8203a-e913-426b-a195-fd18ed482222": "62d8203a-e913-426b-a195-fd18ed486662",
+    "62d8203a e913 426b a195 fd18ed482222": "62d8203a-e913-426b-a195-fd18ed486662",
+    "62d8203a-e913-426b-a195-fd18ed486662": "62d8203a-e913-426b-a195-fd18ed486662",
+    "62d8203a e913 426b a195 fd18ed486662": "62d8203a-e913-426b-a195-fd18ed486662",
+    "6a483545-eb5d-4cc6-8af1-435751a5f0bf": "6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+    "6a483545 eb5d 4cc6 8af1 435751a5f0bf": "6a483545-eb5d-4cc6-8af1-435751a5f0bf",
+    "6aff6333-480e-4749-89a9-7dd1dd8d2f4e": "6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+    "6aff6333 480e 89a9 7dd1dd8d2f4e": "6aff6333-480e-4749-89a9-7dd1dd8d2f4e",
+    "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d": "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+    "6d47605f ed9a 4fbe 9bf0 8df3a25bdd4d": "6d47605f-ed9a-4fbe-9bf0-8df3a25bdd4d",
+    "6fb66d85-b395-4cfc-81ee-c3438d711ce2": "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+    "6fb66d85 b395 4cfc 81ee c3438d711ce2": "6fb66d85-b395-4cfc-81ee-c3438d711ce2",
+    "74803c60-bec8-44c6-82fb-4cdf00555529": "74803c60-bec8-44c6-82fb-4cdf00555529",
+    "74803c60 bec8 44c6 82fb 4cdf00555529": "74803c60-bec8-44c6-82fb-4cdf00555529",
+    "77d51a4f-1dfb-4879-b1b6-2327609532bd": "77d51a4f-1dfb-4879-b1b6-2327609532bd",
+    "77d51a4f 1dfb b1b6 2327609532bd": "77d51a4f-1dfb-4879-b1b6-2327609532bd",
+    "7db88623-46d8-40f3-a202-0e55eaaa0bcb": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+    "7db88623 46d8 40f3 a202 0e55eaaa0bcb": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+    "7db88623-46d8-40f3-a202-0e55eaaa2222": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+    "7db88623 46d8 40f3 a202 0e55eaaa2222": "7db88623-46d8-40f3-a202-0e55eaaa2222",
+    "7f65ca0f-3709-454b-9ff8-c9b45ffb553d": "7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+    "7f65ca0f 454b 9ff8 c9b45ffb553d": "7f65ca0f-3709-454b-9ff8-c9b45ffb553d",
+    "8141c2dc-31f7-4733-a1c5-46ac31473a80": "8141c2dc-31f7-4733-a1c5-46ac31473a80",
+    "8141c2dc 31f7 a1c5 46ac31473a80": "8141c2dc-31f7-4733-a1c5-46ac31473a80",
+    "824e9f55-0671-4d78-989a-f2a56791e8fc": "824e9f55-0671-4d78-989a-f2a56791e8fc",
+    "824e9f55 4d78 989a f2a56791e8fc": "824e9f55-0671-4d78-989a-f2a56791e8fc",
+    "84c01cb1-385e-4dea-834f-a1f34502e856": "84c01cb1-385e-4dea-834f-a1f34502e856",
+    "84c01cb1 385e 4dea 834f a1f34502e856": "84c01cb1-385e-4dea-834f-a1f34502e856",
+    "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c": "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+    "8a50c10a 021d 464f b44c b5c0ecfb4a7c": "8a50c10a-021d-464f-b44c-b5c0ecfb4a7c",
+    "8d3080de-b1eb-48f4-800c-f7849cac48e0": "8d3080de-b1eb-48f4-800c-f7849cac48e0",
+    "8d3080de b1eb 48f4 800c f7849cac48e0": "8d3080de-b1eb-48f4-800c-f7849cac48e0",
+    "9141a8f0-2341-4ef7-80ab-0de741be0f37": "9141a8f0-2341-4ef7-80ab-0de741be0f37",
+    "9141a8f0 4ef7 80ab 0de741be0f37": "9141a8f0-2341-4ef7-80ab-0de741be0f37",
+    "91982696-458a-477c-b0cf-c6ce55370cc0": "91982696-458a-477c-b0cf-c6ce55370cc0",
+    "458a 477c b0cf c6ce55370cc0": "91982696-458a-477c-b0cf-c6ce55370cc0",
+    "967b1ad8-73f1-4d70-ba13-6270359bbb3d": "967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+    "967b1ad8 73f1 4d70 ba13 6270359bbb3d": "967b1ad8-73f1-4d70-ba13-6270359bbb3d",
+    "9adef4a9-9186-47d3-92da-9a58dc48b009": "9adef4a9-9186-47d3-92da-9a58dc48b009",
+    "9adef4a9 47d3 92da 9a58dc48b009": "9adef4a9-9186-47d3-92da-9a58dc48b009",
+    "a05b5344-b81c-40bd-8869-14803f095ed5": "a05b5344-b81c-40bd-8869-14803f095ed5",
+    "a05b5344 b81c 40bd 14803f095ed5": "a05b5344-b81c-40bd-8869-14803f095ed5",
+    "a64a0732-4992-4d1c-b57e-59c24e9d6a40": "a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+    "a64a0732 4d1c b57e 59c24e9d6a40": "a64a0732-4992-4d1c-b57e-59c24e9d6a40",
+    "a8731320-8e01-41a2-b6c9-6f9ba7625a80": "a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+    "a8731320 8e01 41a2 b6c9 6f9ba7625a80": "a8731320-8e01-41a2-b6c9-6f9ba7625a80",
+    "a9647544-85ff-4b2e-bbbd-545367f013ae": "a9647544-85ff-4b2e-bbbd-545367f013ae",
+    "a9647544 85ff 4b2e bbbd 545367f013ae": "a9647544-85ff-4b2e-bbbd-545367f013ae",
+    "b34984e6-1214-4c18-a8d7-fdd5180a23bb": "b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+    "b34984e6 4c18 a8d7 fdd5180a23bb": "b34984e6-1214-4c18-a8d7-fdd5180a23bb",
+    "b58ba106-3cfe-4362-8eeb-277c4714e362": "b58ba106-3cfe-4362-8eeb-277c4714e362",
+    "b58ba106 3cfe 8eeb 277c4714e362": "b58ba106-3cfe-4362-8eeb-277c4714e362",
+    "b7b7ed17-5775-4308-8e3a-26e234a2b33b": "b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+    "b7b7ed17 8e3a 26e234a2b33b": "b7b7ed17-5775-4308-8e3a-26e234a2b33b",
+    "b8d7cf96-f91b-4a79-a07d-92c06cab7564": "b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+    "b8d7cf96 f91b 4a79 a07d 92c06cab7564": "b8d7cf96-f91b-4a79-a07d-92c06cab7564",
+    "b9fc8f74-6666-4d02-bc61-ba9cac92422d": "b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+    "b9fc8f74 4d02 bc61 ba9cac92422d": "b9fc8f74-6666-4d02-bc61-ba9cac92422d",
+    "ba7116e2-3156-49a2-a6c6-9a28b6ff8413": "ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+    "ba7116e2 49a2 a6c6 9a28b6ff8413": "ba7116e2-3156-49a2-a6c6-9a28b6ff8413",
+    "bb39c900-0d1e-4295-b467-464e74a617b2": "bb39c900-0d1e-4295-b467-464e74a617b2",
+    "bb39c900 0d1e b467 464e74a617b2": "bb39c900-0d1e-4295-b467-464e74a617b2",
+    "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd": "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+    "be20b2b9 1fba 41d1 b4d8 11dff0d9cefd": "be20b2b9-1fba-41d1-b4d8-11dff0d9cefd",
+    "c67f9964-2436-492c-82c7-7bcc171d0366": "c67f9964-2436-492c-82c7-7bcc171d0366",
+    "c67f9964 492c 82c7 7bcc171d0366": "c67f9964-2436-492c-82c7-7bcc171d0366",
+    "d316de86-6197-4262-a37c-426b0f47cace": "d316de86-6197-4262-a37c-426b0f47cace",
+    "d316de86 a37c 426b0f47cace": "d316de86-6197-4262-a37c-426b0f47cace",
+    "d7bcfedd-488a-4ade-b767-94a902f25e00": "d7bcfedd-488a-4ade-b767-94a902f25e00",
+    "d7bcfedd 488a 4ade b767 94a902f25e00": "d7bcfedd-488a-4ade-b767-94a902f25e00",
+    "d88e69c7-9f8e-4032-8b6b-570d422e0a03": "d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+    "d88e69c7 9f8e 8b6b 570d422e0a03": "d88e69c7-9f8e-4032-8b6b-570d422e0a03",
+    "d92ae9df-0303-4db3-8d7c-c951727b4503": "d92ae9df-0303-4db3-8d7c-c951727b4503",
+    "d92ae9df 4db3 8d7c c951727b4503": "d92ae9df-0303-4db3-8d7c-c951727b4503",
+    "da33676a-fa1c-4563-bb37-c324ea403b9c": "da33676a-fa1c-4563-bb37-c324ea403b9c",
+    "da33676a fa1c bb37 c324ea403b9c": "da33676a-fa1c-4563-bb37-c324ea403b9c",
+    "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0": "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+    "dcab940a c35b 4d03 b4fe 9e9c7e319ac0": "dcab940a-c35b-4d03-b4fe-9e9c7e319ac0",
+    "e0f53218-7146-414d-903a-9ba33f8d9e49": "e0f53218-7146-414d-903a-9ba33f8d9e49",
+    "e0f53218 414d 903a 9ba33f8d9e49": "e0f53218-7146-414d-903a-9ba33f8d9e49",
+    "e2230ec5-4e20-443f-9c69-63aea677e495": "e2230ec5-4e20-443f-9c69-63aea677e495",
+    "e2230ec5 4e20 443f 9c69 63aea677e495": "e2230ec5-4e20-443f-9c69-63aea677e495",
+    "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb": "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+    "e39a18e8 a3d4 9cfd 0951a7c34bdb": "e39a18e8-a3d4-4739-9cfd-0951a7c34bdb",
+    "e5b6cab2-9bff-4c77-836b-41ad19241c42": "e5b6cab2-9bff-4c77-836b-41ad19241c42",
+    "e5b6cab2 9bff 4c77 836b 41ad19241c42": "e5b6cab2-9bff-4c77-836b-41ad19241c42",
+    "e9cbc316-78b5-4181-a6ce-15ee866cda21": "e9cbc316-78b5-4181-a6ce-15ee866cda21",
+    "e9cbc316 78b5 a6ce 15ee866cda21": "e9cbc316-78b5-4181-a6ce-15ee866cda21",
+    "eaebf180-2c7b-490a-a915-a125e4250a59": "eaebf180-2c7b-490a-a915-a125e4250a59",
+    "eaebf180 2c7b 490a a915 a125e4250a59": "eaebf180-2c7b-490a-a915-a125e4250a59",
+    "ed359d61-b0e6-40d8-a517-e41b6298ae2c": "ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+    "ed359d61 b0e6 40d8 a517 e41b6298ae2c": "ed359d61-b0e6-40d8-a517-e41b6298ae2c",
+    "eecdc853-135e-448d-88cc-9f209084613b": "eecdc853-135e-448d-88cc-9f209084613b",
+    "eecdc853 135e 448d 88cc 9f209084613b": "eecdc853-135e-448d-88cc-9f209084613b",
+    "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1": "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+    "f9d4b974 3b7c 9ea3 33a64a0ffae1": "f9d4b974-3b7c-4913-9ea3-33a64a0ffae1",
+    "fec39756-9457-4b58-8f29-45a57e0acb96": "fec39756-9457-4b58-8f29-45a57e0acb96",
+    "fec39756 4b58 8f29 45a57e0acb96": "fec39756-9457-4b58-8f29-45a57e0acb96"
+  }
+}

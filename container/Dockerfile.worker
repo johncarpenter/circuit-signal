@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY packages/core /app/packages/core
+RUN pip install --no-cache-dir /app/packages/core
+
+COPY packages/worker /app/packages/worker
+RUN pip install --no-cache-dir /app/packages/worker
+
+CMD ["arq", "circuit_worker.main.WorkerSettings"]

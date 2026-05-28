@@ -1,0 +1,38 @@
+{
+  "project_id": "JohnnieWalker-POS",
+  "data_dir": "/workspace/data/jw",
+  "output_dir": "/workspace/output/JohnnieWalker-POS",
+  "created_at": "2026-03-03T01:54:26.548280Z",
+  "stages": {
+    "profile": {
+      "status": "completed",
+      "started_at": "2026-03-03T01:57:39.012183Z",
+      "completed_at": "2026-03-03T01:57:41.853530Z",
+      "error": null
+    },
+    "normalize": {
+      "status": "completed",
+      "started_at": "2026-03-03T02:15:02.448514Z",
+      "completed_at": "2026-03-03T02:15:02.458851Z",
+      "error": null
+    },
+    "plan": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "manifest": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    },
+    "run": {
+      "status": "pending",
+      "started_at": null,
+      "completed_at": null,
+      "error": null
+    }
+  }
+}

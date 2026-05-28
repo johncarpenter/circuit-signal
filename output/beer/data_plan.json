@@ -1,0 +1,50 @@
+{
+  "primary_dataset": {
+    "dataset_id": "all-beer",
+    "source_path": "../data/beer/all-beer.csv",
+    "time_col": "created",
+    "discriminators": [
+      "store_id"
+    ],
+    "values": [
+      "amount"
+    ],
+    "time_grain": "hourly"
+  },
+  "supplementary_datasets": [
+    {
+      "dataset_id": "heineken",
+      "source_path": "../data/beer/heineken.csv",
+      "time_col": "created",
+      "join_key": "store_id",
+      "join_type": "left",
+      "time_grain": "hourly",
+      "values": [
+        "amount"
+      ]
+    },
+    {
+      "dataset_id": "jw",
+      "source_path": "../data/beer/jw.csv",
+      "time_col": "created",
+      "join_key": "store_id",
+      "join_type": "left",
+      "time_grain": "hourly",
+      "values": [
+        "sku",
+        "amount",
+        "quantity",
+        "seatnumber"
+      ]
+    }
+  ],
+  "normalization_sql": {},
+  "segment_by": [],
+  "segment_estimates": {
+    "product": 194,
+    "brand": 1,
+    "subcategory": 1,
+    "category": 1,
+    "department": 1
+  }
+}

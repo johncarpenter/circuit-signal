@@ -7,19 +7,16 @@ __pycache__/
 # OS
 .DS_Store
 
-# Pipeline run artifacts (generated per-run under reports/)
-reports/*/segments/
-reports/*/baselines/
-reports/*/results/
-reports/*/charts/
-reports/*/unified_dataset.csv
+# Pipeline run artifacts (entire reports/ tree — per-run outputs, charts, segments)
+reports/
 
 # Generated baseline charts and reports (Layer 1 artifacts)
 mcp/layer1/*_baseline_charts/
 mcp/layer1/*_baseline_report.md
 
-# Signal workspace (legacy)
+# Signal workspace (legacy + agent scratch space — too large for git)
 .signal-workspace/
+workspace/
 
 # DuckDB
 *.duckdb
@@ -34,7 +31,11 @@ mcp/*/.venv/
 # Data files (large)
 *.csv
 *.parquet
-!data/**
+
+# Source data lake (kept locally, not in git)
+data/
 
 # TDV profiler venv
 tdv_profiler/.venv/
+
+.env

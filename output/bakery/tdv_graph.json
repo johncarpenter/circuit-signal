@@ -1,0 +1,1685 @@
+{
+  "summary": {
+    "datasets": [
+      {
+        "id": "portos_items_2024_2025",
+        "source": "../data/bakery/portos_items_2024_2025.parquet",
+        "rows": 36485867,
+        "is_temporal": true,
+        "signature": "T3-D4-V3",
+        "time_col": "created",
+        "time_grain": "hourly",
+        "discriminators": [
+          "store_id",
+          "description",
+          "seatnumber",
+          "store_name"
+        ],
+        "values": [
+          "sku",
+          "amount",
+          "quantity"
+        ]
+      }
+    ],
+    "discriminators": [
+      {
+        "column": "store_id",
+        "datasets": [
+          "portos_items_2024_2025"
+        ],
+        "value_count": 6
+      },
+      {
+        "column": "description",
+        "datasets": [
+          "portos_items_2024_2025"
+        ],
+        "value_count": 123
+      },
+      {
+        "column": "seatnumber",
+        "datasets": [
+          "portos_items_2024_2025"
+        ],
+        "value_count": 2
+      },
+      {
+        "column": "store_name",
+        "datasets": [
+          "portos_items_2024_2025"
+        ],
+        "value_count": 6
+      }
+    ],
+    "hierarchies": [],
+    "nodes": 145,
+    "edges": 144
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "ds:portos_items_2024_2025",
+        "node_type": "DATASET",
+        "source_path": "../data/bakery/portos_items_2024_2025.parquet",
+        "row_count": 36485867,
+        "is_temporal": true,
+        "tdv_signature": "T3-D4-V3",
+        "primary_time_col": "created",
+        "time_grain": "hourly"
+      },
+      {
+        "id": "disc:store_id",
+        "node_type": "DISCRIMINATOR",
+        "column_name": "store_id",
+        "datasets": [
+          "portos_items_2024_2025"
+        ]
+      },
+      {
+        "id": "val:store_id=34f4768c-96bd-490d-9e36-cf305224a23a",
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "34f4768c-96bd-490d-9e36-cf305224a23a"
+      },
+      {
+        "id": "val:store_id=368e54f4-265c-4dbc-b8b2-0c781a658b18",
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "368e54f4-265c-4dbc-b8b2-0c781a658b18"
+      },
+      {
+        "id": "val:store_id=3b5405d9-2dbc-4f00-8b8c-213777adbb12",
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "3b5405d9-2dbc-4f00-8b8c-213777adbb12"
+      },
+      {
+        "id": "val:store_id=59523140-6111-4d4b-a87a-987a8e75b125",
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "59523140-6111-4d4b-a87a-987a8e75b125"
+      },
+      {
+        "id": "val:store_id=6c37c3f7-6044-4def-8a02-79b3e42899d8",
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "6c37c3f7-6044-4def-8a02-79b3e42899d8"
+      },
+      {
+        "id": "val:store_id=b2149d9b-e829-4b0f-9eb6-43b11a7e39ee",
+        "node_type": "VALUE",
+        "discriminator": "store_id",
+        "value": "b2149d9b-e829-4b0f-9eb6-43b11a7e39ee"
+      },
+      {
+        "id": "disc:description",
+        "node_type": "DISCRIMINATOR",
+        "column_name": "description",
+        "datasets": [
+          "portos_items_2024_2025"
+        ]
+      },
+      {
+        "id": "val:description=",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": ""
+      },
+      {
+        "id": "val:description= -2-Go 96oz",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": " -2-Go 96oz"
+      },
+      {
+        "id": "val:description= -2-Go-96oz",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": " -2-Go-96oz"
+      },
+      {
+        "id": "val:description= -a la carte",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": " -a la carte"
+      },
+      {
+        "id": "val:description= ChocHazel",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": " ChocHazel"
+      },
+      {
+        "id": "val:description= EVER AFTER",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": " EVER AFTER"
+      },
+      {
+        "id": "val:description=(3pcs)",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "(3pcs)"
+      },
+      {
+        "id": "val:description=(Medianoche)",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "(Medianoche)"
+      },
+      {
+        "id": "val:description=(pack of 25)",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "(pack of 25)"
+      },
+      {
+        "id": "val:description=(pack of 6)",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "(pack of 6)"
+      },
+      {
+        "id": "val:description=------------",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "------------"
+      },
+      {
+        "id": "val:description=-2-Go Box",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-2-Go Box"
+      },
+      {
+        "id": "val:description=-Plato Pkg",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-Plato Pkg"
+      },
+      {
+        "id": "val:description=-Pltr Pkg",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-Pltr Pkg"
+      },
+      {
+        "id": "val:description=-RENTAL FEE",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-RENTAL FEE"
+      },
+      {
+        "id": "val:description=-a la carete",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-a la carete"
+      },
+      {
+        "id": "val:description=-a la carte",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-a la carte"
+      },
+      {
+        "id": "val:description=-potato ball",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "-potato ball"
+      },
+      {
+        "id": "val:description=1",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "1"
+      },
+      {
+        "id": "val:description=16 oz",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "16 oz"
+      },
+      {
+        "id": "val:description=16oz",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "16oz"
+      },
+      {
+        "id": "val:description=BRIDE+GROOM",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "BRIDE+GROOM"
+      },
+      {
+        "id": "val:description=BROC'LI SOUP",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "BROC'LI SOUP"
+      },
+      {
+        "id": "val:description=BROCCOLI",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "BROCCOLI"
+      },
+      {
+        "id": "val:description=Bacon",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Bacon"
+      },
+      {
+        "id": "val:description=Bread Bowl",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Bread Bowl"
+      },
+      {
+        "id": "val:description=CANDLE",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "CANDLE"
+      },
+      {
+        "id": "val:description=CANDLES",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "CANDLES"
+      },
+      {
+        "id": "val:description=CHLA Btrfly",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "CHLA Btrfly"
+      },
+      {
+        "id": "val:description=COWBOY CPL",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "COWBOY CPL"
+      },
+      {
+        "id": "val:description=CST",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "CST"
+      },
+      {
+        "id": "val:description=Cake",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Cake"
+      },
+      {
+        "id": "val:description=CandiedBacon",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "CandiedBacon"
+      },
+      {
+        "id": "val:description=Chicken",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Chicken"
+      },
+      {
+        "id": "val:description=ChocHazel",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ChocHazel"
+      },
+      {
+        "id": "val:description=Cold Brew",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Cold Brew"
+      },
+      {
+        "id": "val:description=DulceDeLeche",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "DulceDeLeche"
+      },
+      {
+        "id": "val:description=DuleDeLeche",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "DuleDeLeche"
+      },
+      {
+        "id": "val:description=Empanada",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Empanada"
+      },
+      {
+        "id": "val:description=GINGER",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "GINGER"
+      },
+      {
+        "id": "val:description=GUAYABA",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "GUAYABA"
+      },
+      {
+        "id": "val:description=Graduation",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Graduation"
+      },
+      {
+        "id": "val:description=Halloween",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Halloween"
+      },
+      {
+        "id": "val:description=Harvest",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Harvest"
+      },
+      {
+        "id": "val:description=Hazelnut",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Hazelnut"
+      },
+      {
+        "id": "val:description=Hlwn Pumpkn",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Hlwn Pumpkn"
+      },
+      {
+        "id": "val:description=Hot Choc",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Hot Choc"
+      },
+      {
+        "id": "val:description=Hot Choclate",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Hot Choclate"
+      },
+      {
+        "id": "val:description=Hvest w/Chkn",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Hvest w/Chkn"
+      },
+      {
+        "id": "val:description=Iced",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Iced"
+      },
+      {
+        "id": "val:description=Iced Tea",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Iced Tea"
+      },
+      {
+        "id": "val:description=LG",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "LG"
+      },
+      {
+        "id": "val:description=Lemonade",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Lemonade"
+      },
+      {
+        "id": "val:description=Loaded Fries",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Loaded Fries"
+      },
+      {
+        "id": "val:description=Loaf",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Loaf"
+      },
+      {
+        "id": "val:description=MANGO",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "MANGO"
+      },
+      {
+        "id": "val:description=Matcha Latte",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Matcha Latte"
+      },
+      {
+        "id": "val:description=New Year's",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "New Year's"
+      },
+      {
+        "id": "val:description=PASSION COLA",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "PASSION COLA"
+      },
+      {
+        "id": "val:description=PEPPERS",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "PEPPERS"
+      },
+      {
+        "id": "val:description=PEPPERS SOUP",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "PEPPERS SOUP"
+      },
+      {
+        "id": "val:description=PLAIN",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "PLAIN"
+      },
+      {
+        "id": "val:description=Pesto",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Pesto"
+      },
+      {
+        "id": "val:description=PlatoCubano",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "PlatoCubano"
+      },
+      {
+        "id": "val:description=Pomegranate",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Pomegranate"
+      },
+      {
+        "id": "val:description=Pomergranate",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Pomergranate"
+      },
+      {
+        "id": "val:description=Raspberry",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Raspberry"
+      },
+      {
+        "id": "val:description=SOUP",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "SOUP"
+      },
+      {
+        "id": "val:description=STRAW/BANANA",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "STRAW/BANANA"
+      },
+      {
+        "id": "val:description=Skull",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Skull"
+      },
+      {
+        "id": "val:description=Slice",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Slice"
+      },
+      {
+        "id": "val:description=Star",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Star"
+      },
+      {
+        "id": "val:description=StrawChocDip",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "StrawChocDip"
+      },
+      {
+        "id": "val:description=Strawberry",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Strawberry"
+      },
+      {
+        "id": "val:description=Sweet Impact",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "Sweet Impact"
+      },
+      {
+        "id": "val:description=TEA",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "TEA"
+      },
+      {
+        "id": "val:description=a la carte",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "a la carte"
+      },
+      {
+        "id": "val:description=baguet",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "baguet"
+      },
+      {
+        "id": "val:description=batard",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "batard"
+      },
+      {
+        "id": "val:description=bomb",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "bomb"
+      },
+      {
+        "id": "val:description=caesar",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "caesar"
+      },
+      {
+        "id": "val:description=ceasar",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ceasar"
+      },
+      {
+        "id": "val:description=cheese",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "cheese"
+      },
+      {
+        "id": "val:description=clntr ceasar",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "clntr ceasar"
+      },
+      {
+        "id": "val:description=cookie",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "cookie"
+      },
+      {
+        "id": "val:description=crumb",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "crumb"
+      },
+      {
+        "id": "val:description=de los reyes",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "de los reyes"
+      },
+      {
+        "id": "val:description=de pollo",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "de pollo"
+      },
+      {
+        "id": "val:description=dressing",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "dressing"
+      },
+      {
+        "id": "val:description=dulcedelech",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "dulcedelech"
+      },
+      {
+        "id": "val:description=dulcedeleche",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "dulcedeleche"
+      },
+      {
+        "id": "val:description=empanada",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "empanada"
+      },
+      {
+        "id": "val:description=fresh",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "fresh"
+      },
+      {
+        "id": "val:description=grn tea latt",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "grn tea latt"
+      },
+      {
+        "id": "val:description=guayaba",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "guayaba"
+      },
+      {
+        "id": "val:description=hly Flag",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "hly Flag"
+      },
+      {
+        "id": "val:description=holiday",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "holiday"
+      },
+      {
+        "id": "val:description=iced",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "iced"
+      },
+      {
+        "id": "val:description=ind",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ind"
+      },
+      {
+        "id": "val:description=ind fresh",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "ind fresh"
+      },
+      {
+        "id": "val:description=indv fresh",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "indv fresh"
+      },
+      {
+        "id": "val:description=latte",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "latte"
+      },
+      {
+        "id": "val:description=loaf",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "loaf"
+      },
+      {
+        "id": "val:description=macaron",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "macaron"
+      },
+      {
+        "id": "val:description=mamey",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "mamey"
+      },
+      {
+        "id": "val:description=mango",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "mango"
+      },
+      {
+        "id": "val:description=matcha",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "matcha"
+      },
+      {
+        "id": "val:description=matcha latte",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "matcha latte"
+      },
+      {
+        "id": "val:description=mini",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "mini"
+      },
+      {
+        "id": "val:description=mixed berry",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "mixed berry"
+      },
+      {
+        "id": "val:description=pack of 6)",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "pack of 6)"
+      },
+      {
+        "id": "val:description=parisian",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "parisian"
+      },
+      {
+        "id": "val:description=passion cola",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "passion cola"
+      },
+      {
+        "id": "val:description=pine/custard",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "pine/custard"
+      },
+      {
+        "id": "val:description=pumpkn spice",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "pumpkn spice"
+      },
+      {
+        "id": "val:description=rasp almond",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "rasp almond"
+      },
+      {
+        "id": "val:description=slcie",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "slcie"
+      },
+      {
+        "id": "val:description=slice",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "slice"
+      },
+      {
+        "id": "val:description=straw/banana",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "straw/banana"
+      },
+      {
+        "id": "val:description=tartlet",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "tartlet"
+      },
+      {
+        "id": "val:description=twist",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "twist"
+      },
+      {
+        "id": "val:description=w/Chicken",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "w/Chicken"
+      },
+      {
+        "id": "val:description=xF DX",
+        "node_type": "VALUE",
+        "discriminator": "description",
+        "value": "xF DX"
+      },
+      {
+        "id": "disc:seatnumber",
+        "node_type": "DISCRIMINATOR",
+        "column_name": "seatnumber",
+        "datasets": [
+          "portos_items_2024_2025"
+        ]
+      },
+      {
+        "id": "val:seatnumber=0",
+        "node_type": "VALUE",
+        "discriminator": "seatnumber",
+        "value": "0"
+      },
+      {
+        "id": "val:seatnumber=1",
+        "node_type": "VALUE",
+        "discriminator": "seatnumber",
+        "value": "1"
+      },
+      {
+        "id": "disc:store_name",
+        "node_type": "DISCRIMINATOR",
+        "column_name": "store_name",
+        "datasets": [
+          "portos_items_2024_2025"
+        ]
+      },
+      {
+        "id": "val:store_name=Porto's Bakery and Cafe - Burbank",
+        "node_type": "VALUE",
+        "discriminator": "store_name",
+        "value": "Porto's Bakery and Cafe - Burbank"
+      },
+      {
+        "id": "val:store_name=Porto's Bakery and Cafe - Glendale",
+        "node_type": "VALUE",
+        "discriminator": "store_name",
+        "value": "Porto's Bakery and Cafe - Glendale"
+      },
+      {
+        "id": "val:store_name=Porto's Bakery and Cafe - Northridge",
+        "node_type": "VALUE",
+        "discriminator": "store_name",
+        "value": "Porto's Bakery and Cafe - Northridge"
+      },
+      {
+        "id": "val:store_name=Porto's Bakery and Cafe Buena Park",
+        "node_type": "VALUE",
+        "discriminator": "store_name",
+        "value": "Porto's Bakery and Cafe Buena Park"
+      },
+      {
+        "id": "val:store_name=Porto's Bakery and Cafe Downey",
+        "node_type": "VALUE",
+        "discriminator": "store_name",
+        "value": "Porto's Bakery and Cafe Downey"
+      },
+      {
+        "id": "val:store_name=Porto's Bakery and Cafe West Covina",
+        "node_type": "VALUE",
+        "discriminator": "store_name",
+        "value": "Porto's Bakery and Cafe West Covina"
+      },
+      {
+        "id": "valcol:sku",
+        "node_type": "VALUE_COLUMN",
+        "column_name": "sku",
+        "stats": {
+          "mean": 830571.3975,
+          "std": 190278.7325,
+          "min": 231.0,
+          "max": 2222222.0,
+          "median": 875150.0
+        }
+      },
+      {
+        "id": "valcol:amount",
+        "node_type": "VALUE_COLUMN",
+        "column_name": "amount",
+        "stats": {
+          "mean": 525.0176,
+          "std": 589.0942,
+          "min": -66045.0,
+          "max": 12600.0,
+          "median": 349.0
+        }
+      },
+      {
+        "id": "valcol:quantity",
+        "node_type": "VALUE_COLUMN",
+        "column_name": "quantity",
+        "stats": {
+          "mean": 1.5494,
+          "std": 1.5989,
+          "min": 1.0,
+          "max": 401.0,
+          "median": 1.0
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "disc:store_id",
+        "edge_type": "DATASET_HAS_DISCRIMINATOR"
+      },
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "disc:description",
+        "edge_type": "DATASET_HAS_DISCRIMINATOR"
+      },
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "disc:seatnumber",
+        "edge_type": "DATASET_HAS_DISCRIMINATOR"
+      },
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "disc:store_name",
+        "edge_type": "DATASET_HAS_DISCRIMINATOR"
+      },
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "valcol:sku",
+        "edge_type": "DATASET_HAS_VALUE_COL"
+      },
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "valcol:amount",
+        "edge_type": "DATASET_HAS_VALUE_COL"
+      },
+      {
+        "source": "ds:portos_items_2024_2025",
+        "target": "valcol:quantity",
+        "edge_type": "DATASET_HAS_VALUE_COL"
+      },
+      {
+        "source": "disc:store_id",
+        "target": "val:store_id=34f4768c-96bd-490d-9e36-cf305224a23a",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_id",
+        "target": "val:store_id=368e54f4-265c-4dbc-b8b2-0c781a658b18",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_id",
+        "target": "val:store_id=3b5405d9-2dbc-4f00-8b8c-213777adbb12",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_id",
+        "target": "val:store_id=59523140-6111-4d4b-a87a-987a8e75b125",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_id",
+        "target": "val:store_id=6c37c3f7-6044-4def-8a02-79b3e42899d8",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_id",
+        "target": "val:store_id=b2149d9b-e829-4b0f-9eb6-43b11a7e39ee",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description= -2-Go 96oz",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description= -2-Go-96oz",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description= -a la carte",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description= ChocHazel",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description= EVER AFTER",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=(3pcs)",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=(Medianoche)",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=(pack of 25)",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=(pack of 6)",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=------------",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-2-Go Box",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-Plato Pkg",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-Pltr Pkg",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-RENTAL FEE",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-a la carete",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-a la carte",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=-potato ball",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=1",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=16 oz",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=16oz",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=BRIDE+GROOM",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=BROC'LI SOUP",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=BROCCOLI",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Bacon",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Bread Bowl",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=CANDLE",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=CANDLES",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=CHLA Btrfly",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=COWBOY CPL",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=CST",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Cake",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=CandiedBacon",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Chicken",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=ChocHazel",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Cold Brew",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=DulceDeLeche",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=DuleDeLeche",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Empanada",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=GINGER",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=GUAYABA",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Graduation",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Halloween",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Harvest",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Hazelnut",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Hlwn Pumpkn",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Hot Choc",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Hot Choclate",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Hvest w/Chkn",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Iced",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Iced Tea",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=LG",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Lemonade",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Loaded Fries",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Loaf",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=MANGO",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Matcha Latte",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=New Year's",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=PASSION COLA",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=PEPPERS",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=PEPPERS SOUP",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=PLAIN",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Pesto",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=PlatoCubano",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Pomegranate",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Pomergranate",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Raspberry",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=SOUP",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=STRAW/BANANA",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Skull",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Slice",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Star",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=StrawChocDip",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Strawberry",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=Sweet Impact",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=TEA",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=a la carte",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=baguet",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=batard",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=bomb",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=caesar",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=ceasar",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=cheese",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=clntr ceasar",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=cookie",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=crumb",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=de los reyes",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=de pollo",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=dressing",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=dulcedelech",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=dulcedeleche",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=empanada",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=fresh",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=grn tea latt",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=guayaba",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=hly Flag",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=holiday",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=iced",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=ind",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=ind fresh",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=indv fresh",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=latte",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=loaf",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=macaron",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=mamey",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=mango",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=matcha",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=matcha latte",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=mini",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=mixed berry",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=pack of 6)",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=parisian",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=passion cola",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=pine/custard",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=pumpkn spice",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=rasp almond",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=slcie",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=slice",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=straw/banana",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=tartlet",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=twist",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=w/Chicken",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:description",
+        "target": "val:description=xF DX",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:seatnumber",
+        "target": "val:seatnumber=0",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:seatnumber",
+        "target": "val:seatnumber=1",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_name",
+        "target": "val:store_name=Porto's Bakery and Cafe - Burbank",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_name",
+        "target": "val:store_name=Porto's Bakery and Cafe - Glendale",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_name",
+        "target": "val:store_name=Porto's Bakery and Cafe - Northridge",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_name",
+        "target": "val:store_name=Porto's Bakery and Cafe Buena Park",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_name",
+        "target": "val:store_name=Porto's Bakery and Cafe Downey",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      },
+      {
+        "source": "disc:store_name",
+        "target": "val:store_name=Porto's Bakery and Cafe West Covina",
+        "edge_type": "DISCRIMINATOR_HAS_VALUE"
+      }
+    ]
+  }
+}

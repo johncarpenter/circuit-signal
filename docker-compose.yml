@@ -1,0 +1,34 @@
+services:
+  signal-agent:
+    build: .
+    env_file:
+      - path: .env
+        required: false
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./workspace/data:/workspace/data
+      - ./workspace/output:/workspace/output
+      - ./workspace/reports:/workspace/reports
+    environment:
+      - CLAUDE_CODE_OAUTH_TOKEN=${CLAUDE_CODE_OAUTH_TOKEN}
+      - AGENT_API_TOKEN=${AGENT_API_TOKEN}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - AGENT_NAME=${AGENT_NAME:-signal-agent}
+      - WORKSPACE_PATH=/workspace
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    networks:
+      - restricted
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          memory: 8G
+          cpus: '2.0'
+        reservations:
+          memory: 1G
+          cpus: '1.0'
+
+networks:
+  restricted:
+    driver: bridge

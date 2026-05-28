@@ -1,0 +1,1019 @@
+{
+  "version": "1.0",
+  "levels": [
+    "product",
+    "brand",
+    "subcategory",
+    "category",
+    "department"
+  ],
+  "graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "node_type": "CANONICAL",
+        "value": "#332",
+        "confidence": 1.0,
+        "id": "canonical:#332"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "#330",
+        "normalized": "#",
+        "pack_info": null,
+        "id": "raw:#330"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "#331",
+        "normalized": "#",
+        "pack_info": null,
+        "id": "raw:#331"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "#332",
+        "normalized": "#",
+        "pack_info": null,
+        "id": "raw:#332"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "brand",
+        "value": "Unclassified",
+        "id": "brand:Unclassified"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "subcategory",
+        "value": "Unclassified",
+        "id": "subcategory:Unclassified"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "category",
+        "value": "Unclassified",
+        "id": "category:Unclassified"
+      },
+      {
+        "node_type": "HIERARCHY",
+        "level": "department",
+        "value": "Unclassified",
+        "id": "department:Unclassified"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW Black",
+        "confidence": 1.0,
+        "id": "canonical:JW Black"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "1/2 JW Black",
+        "normalized": "jw black",
+        "pack_info": null,
+        "id": "raw:1/2 JW Black"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW BLACK",
+        "normalized": "jw black",
+        "pack_info": null,
+        "id": "raw:JW BLACK"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Black",
+        "normalized": "jw black",
+        "pack_info": null,
+        "id": "raw:JW Black"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "2 Oz",
+        "confidence": 1.0,
+        "id": "canonical:2 Oz"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "2 Oz",
+        "normalized": "",
+        "pack_info": "2 oz",
+        "id": "raw:2 Oz"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "3 ice cubes only LOL",
+        "confidence": 1.0,
+        "id": "canonical:3 ice cubes only LOL"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "3 ice cubes only LOL",
+        "normalized": "ice cubes only lol",
+        "pack_info": null,
+        "id": "raw:3 ice cubes only LOL"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "BT BlueLabel JW",
+        "confidence": 1.0,
+        "id": "canonical:BT BlueLabel JW"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "BT BlueLabel JW",
+        "normalized": "bt bluelabel jw",
+        "pack_info": null,
+        "id": "raw:BT BlueLabel JW"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW Black BTL SERV",
+        "confidence": 0.75,
+        "id": "canonical:JW Black BTL SERV"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "BTL JW BLACK",
+        "normalized": "bottle jw black",
+        "pack_info": null,
+        "id": "raw:BTL JW BLACK"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Black BTL SERV",
+        "normalized": "jw black bottle serv",
+        "pack_info": null,
+        "id": "raw:JW Black BTL SERV"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Blue BTL",
+        "normalized": "jw blue bottle",
+        "pack_info": null,
+        "id": "raw:JW Blue BTL"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Double Black",
+        "normalized": "jw double black",
+        "pack_info": null,
+        "id": "raw:JW Double Black"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWF",
+        "confidence": 0.8,
+        "id": "canonical:JWF"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW",
+        "normalized": "jw",
+        "pack_info": null,
+        "id": "raw:JW"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW ",
+        "normalized": "jw",
+        "pack_info": null,
+        "id": "raw:JW "
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWF",
+        "normalized": "jwf",
+        "pack_info": null,
+        "id": "raw:JWF"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW. Blue",
+        "confidence": 1.0,
+        "id": "canonical:JW. Blue"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW BLUE",
+        "normalized": "jw blue",
+        "pack_info": null,
+        "id": "raw:JW BLUE"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Blue",
+        "normalized": "jw blue",
+        "pack_info": null,
+        "id": "raw:JW Blue"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW. Blue",
+        "normalized": "jw blue",
+        "pack_info": null,
+        "id": "raw:JW. Blue"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW BLUE DOUBLE",
+        "confidence": 1.0,
+        "id": "canonical:JW BLUE DOUBLE"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW BLUE DOUBLE",
+        "normalized": "jw blue double",
+        "pack_info": null,
+        "id": "raw:JW BLUE DOUBLE"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW HIGH RYE",
+        "confidence": 1.0,
+        "id": "canonical:JW HIGH RYE"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW HIGH RYE",
+        "normalized": "jw high rye",
+        "pack_info": null,
+        "id": "raw:JW HIGH RYE"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW Old Fasho",
+        "confidence": 1.0,
+        "id": "canonical:JW Old Fasho"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Old Fasho",
+        "normalized": "jw old fasho",
+        "pack_info": null,
+        "id": "raw:JW Old Fasho"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW Platinum",
+        "confidence": 1.0,
+        "id": "canonical:JW Platinum"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Platinum",
+        "normalized": "jw platinum",
+        "pack_info": null,
+        "id": "raw:JW Platinum"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JW Red",
+        "confidence": 1.0,
+        "id": "canonical:JW Red"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW RED",
+        "normalized": "jw red",
+        "pack_info": null,
+        "id": "raw:JW RED"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JW Red",
+        "normalized": "jw red",
+        "pack_info": null,
+        "id": "raw:JW Red"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWALKER",
+        "confidence": 1.0,
+        "id": "canonical:JWALKER"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWALKER",
+        "normalized": "jwalker",
+        "pack_info": null,
+        "id": "raw:JWALKER"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWALKER GREEN",
+        "confidence": 1.0,
+        "id": "canonical:JWALKER GREEN"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWALKER GREEN",
+        "normalized": "jwalker green",
+        "pack_info": null,
+        "id": "raw:JWALKER GREEN"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWB DOUBLE",
+        "confidence": 1.0,
+        "id": "canonical:JWB DOUBLE"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWB DOUBLE",
+        "normalized": "jwb double",
+        "pack_info": null,
+        "id": "raw:JWB DOUBLE"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWBLACK",
+        "confidence": 1.0,
+        "id": "canonical:JWBLACK"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWBLACK",
+        "normalized": "jwblack",
+        "pack_info": null,
+        "id": "raw:JWBLACK"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWalker Black Manhattan",
+        "confidence": 1.0,
+        "id": "canonical:JWalker Black Manhattan"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWalker Black Manhattan",
+        "normalized": "jwalker black manhattan",
+        "pack_info": null,
+        "id": "raw:JWalker Black Manhattan"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWalker Blue",
+        "confidence": 1.0,
+        "id": "canonical:JWalker Blue"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWalker Blue",
+        "normalized": "jwalker blue",
+        "pack_info": null,
+        "id": "raw:JWalker Blue"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWalker Red",
+        "confidence": 1.0,
+        "id": "canonical:JWalker Red"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWalker Red",
+        "normalized": "jwalker red",
+        "pack_info": null,
+        "id": "raw:JWalker Red"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "JWalker Red Manhattan",
+        "confidence": 1.0,
+        "id": "canonical:JWalker Red Manhattan"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "JWalker Red Manhattan",
+        "normalized": "jwalker red manhattan",
+        "pack_info": null,
+        "id": "raw:JWalker Red Manhattan"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "REGULAR",
+        "confidence": 1.0,
+        "id": "canonical:REGULAR"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "REGULAR",
+        "normalized": "regular",
+        "pack_info": null,
+        "id": "raw:REGULAR"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "ROCKS",
+        "confidence": 1.0,
+        "id": "canonical:ROCKS"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "ROCKS",
+        "normalized": "rocks",
+        "pack_info": null,
+        "id": "raw:ROCKS"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "UP",
+        "confidence": 1.0,
+        "id": "canonical:UP"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "UP",
+        "normalized": "up",
+        "pack_info": null,
+        "id": "raw:UP"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "ice",
+        "confidence": 1.0,
+        "id": "canonical:ice"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "ice",
+        "normalized": "ice",
+        "pack_info": null,
+        "id": "raw:ice"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "ice nwater",
+        "confidence": 1.0,
+        "id": "canonical:ice nwater"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "ice nwater",
+        "normalized": "ice nwater",
+        "pack_info": null,
+        "id": "raw:ice nwater"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "neat",
+        "confidence": 1.0,
+        "id": "canonical:neat"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "neat",
+        "normalized": "neat",
+        "pack_info": null,
+        "id": "raw:neat"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "soda/tall",
+        "confidence": 1.0,
+        "id": "canonical:soda/tall"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "soda/tall",
+        "normalized": "soda tall",
+        "pack_info": null,
+        "id": "raw:soda/tall"
+      },
+      {
+        "node_type": "CANONICAL",
+        "value": "w  water",
+        "confidence": 0.833,
+        "id": "canonical:w  water"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "w  water",
+        "normalized": "w water",
+        "pack_info": null,
+        "id": "raw:w  water"
+      },
+      {
+        "node_type": "RAW_VALUE",
+        "value": "water",
+        "normalized": "water",
+        "pack_info": null,
+        "id": "raw:water"
+      }
+    ],
+    "edges": [
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:#332",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:#330",
+        "target": "canonical:#332"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:#331",
+        "target": "canonical:#332"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:#332",
+        "target": "canonical:#332"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "brand",
+        "to_level": "subcategory",
+        "source": "brand:Unclassified",
+        "target": "subcategory:Unclassified"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "subcategory",
+        "to_level": "category",
+        "source": "subcategory:Unclassified",
+        "target": "category:Unclassified"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "category",
+        "to_level": "department",
+        "source": "category:Unclassified",
+        "target": "department:Unclassified"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW Black",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:1/2 JW Black",
+        "target": "canonical:JW Black"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW BLACK",
+        "target": "canonical:JW Black"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Black",
+        "target": "canonical:JW Black"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:2 Oz",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:2 Oz",
+        "target": "canonical:2 Oz"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:3 ice cubes only LOL",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:3 ice cubes only LOL",
+        "target": "canonical:3 ice cubes only LOL"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:BT BlueLabel JW",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:BT BlueLabel JW",
+        "target": "canonical:BT BlueLabel JW"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW Black BTL SERV",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:BTL JW BLACK",
+        "target": "canonical:JW Black BTL SERV"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Black BTL SERV",
+        "target": "canonical:JW Black BTL SERV"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Blue BTL",
+        "target": "canonical:JW Black BTL SERV"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Double Black",
+        "target": "canonical:JW Black BTL SERV"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWF",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW",
+        "target": "canonical:JWF"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW ",
+        "target": "canonical:JWF"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWF",
+        "target": "canonical:JWF"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW. Blue",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW BLUE",
+        "target": "canonical:JW. Blue"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Blue",
+        "target": "canonical:JW. Blue"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW. Blue",
+        "target": "canonical:JW. Blue"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW BLUE DOUBLE",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW BLUE DOUBLE",
+        "target": "canonical:JW BLUE DOUBLE"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW HIGH RYE",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW HIGH RYE",
+        "target": "canonical:JW HIGH RYE"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW Old Fasho",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Old Fasho",
+        "target": "canonical:JW Old Fasho"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW Platinum",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Platinum",
+        "target": "canonical:JW Platinum"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JW Red",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW RED",
+        "target": "canonical:JW Red"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JW Red",
+        "target": "canonical:JW Red"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWALKER",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWALKER",
+        "target": "canonical:JWALKER"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWALKER GREEN",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWALKER GREEN",
+        "target": "canonical:JWALKER GREEN"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWB DOUBLE",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWB DOUBLE",
+        "target": "canonical:JWB DOUBLE"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWBLACK",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWBLACK",
+        "target": "canonical:JWBLACK"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWalker Black Manhattan",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWalker Black Manhattan",
+        "target": "canonical:JWalker Black Manhattan"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWalker Blue",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWalker Blue",
+        "target": "canonical:JWalker Blue"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWalker Red",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWalker Red",
+        "target": "canonical:JWalker Red"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:JWalker Red Manhattan",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:JWalker Red Manhattan",
+        "target": "canonical:JWalker Red Manhattan"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:REGULAR",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:REGULAR",
+        "target": "canonical:REGULAR"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:ROCKS",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:ROCKS",
+        "target": "canonical:ROCKS"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:UP",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:UP",
+        "target": "canonical:UP"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:ice",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:ice",
+        "target": "canonical:ice"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:ice nwater",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:ice nwater",
+        "target": "canonical:ice nwater"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:neat",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:neat",
+        "target": "canonical:neat"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:soda/tall",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:soda/tall",
+        "target": "canonical:soda/tall"
+      },
+      {
+        "edge_type": "BELONGS_TO",
+        "from_level": "product",
+        "to_level": "brand",
+        "source": "canonical:w  water",
+        "target": "brand:Unclassified"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:w  water",
+        "target": "canonical:w  water"
+      },
+      {
+        "edge_type": "NORMALIZES_TO",
+        "source": "raw:water",
+        "target": "canonical:w  water"
+      }
+    ]
+  },
+  "raw_to_canonical": {
+    "#330": "#332",
+    "#": "#332",
+    "#331": "#332",
+    "#332": "#332",
+    "1/2 JW Black": "JW Black",
+    "jw black": "JW Black",
+    "JW BLACK": "JW Black",
+    "JW Black": "JW Black",
+    "2 Oz": "2 Oz",
+    "": "2 Oz",
+    "3 ice cubes only LOL": "3 ice cubes only LOL",
+    "ice cubes only lol": "3 ice cubes only LOL",
+    "BT BlueLabel JW": "BT BlueLabel JW",
+    "bt bluelabel jw": "BT BlueLabel JW",
+    "BTL JW BLACK": "JW Black BTL SERV",
+    "bottle jw black": "JW Black BTL SERV",
+    "JW Black BTL SERV": "JW Black BTL SERV",
+    "jw black bottle serv": "JW Black BTL SERV",
+    "JW Blue BTL": "JW Black BTL SERV",
+    "jw blue bottle": "JW Black BTL SERV",
+    "JW Double Black": "JW Black BTL SERV",
+    "jw double black": "JW Black BTL SERV",
+    "JW": "JWF",
+    "jw": "JWF",
+    "JW ": "JWF",
+    "JWF": "JWF",
+    "jwf": "JWF",
+    "JW BLUE": "JW. Blue",
+    "jw blue": "JW. Blue",
+    "JW Blue": "JW. Blue",
+    "JW. Blue": "JW. Blue",
+    "JW BLUE DOUBLE": "JW BLUE DOUBLE",
+    "jw blue double": "JW BLUE DOUBLE",
+    "JW HIGH RYE": "JW HIGH RYE",
+    "jw high rye": "JW HIGH RYE",
+    "JW Old Fasho": "JW Old Fasho",
+    "jw old fasho": "JW Old Fasho",
+    "JW Platinum": "JW Platinum",
+    "jw platinum": "JW Platinum",
+    "JW RED": "JW Red",
+    "jw red": "JW Red",
+    "JW Red": "JW Red",
+    "JWALKER": "JWALKER",
+    "jwalker": "JWALKER",
+    "JWALKER GREEN": "JWALKER GREEN",
+    "jwalker green": "JWALKER GREEN",
+    "JWB DOUBLE": "JWB DOUBLE",
+    "jwb double": "JWB DOUBLE",
+    "JWBLACK": "JWBLACK",
+    "jwblack": "JWBLACK",
+    "JWalker Black Manhattan": "JWalker Black Manhattan",
+    "jwalker black manhattan": "JWalker Black Manhattan",
+    "JWalker Blue": "JWalker Blue",
+    "jwalker blue": "JWalker Blue",
+    "JWalker Red": "JWalker Red",
+    "jwalker red": "JWalker Red",
+    "JWalker Red Manhattan": "JWalker Red Manhattan",
+    "jwalker red manhattan": "JWalker Red Manhattan",
+    "REGULAR": "REGULAR",
+    "regular": "REGULAR",
+    "ROCKS": "ROCKS",
+    "rocks": "ROCKS",
+    "UP": "UP",
+    "up": "UP",
+    "ice": "ice",
+    "ice nwater": "ice nwater",
+    "neat": "neat",
+    "soda/tall": "soda/tall",
+    "soda tall": "soda/tall",
+    "w  water": "w  water",
+    "w water": "w  water",
+    "water": "w  water"
+  }
+}

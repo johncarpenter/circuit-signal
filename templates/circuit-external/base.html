@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default("Circuit | Intelligence Report") }}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section class="cover">
+    <div class="cover-header">
+      <img class="cover-logo" src="logo-gmail-whitebackground.png" alt="Circuit Logo">
+    </div>
+
+    <div class="cover-body">
+      <div class="accent-bar"></div>
+      <h1 class="cover-title">{{ title | default("Transaction Intelligence Report") }}</h1>
+      {% if subtitle %}
+      <p class="cover-subtitle">{{ subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <div class="cover-footer">
+      <dl class="cover-meta">
+        <div>
+          <dt>Client</dt>
+          <dd>{{ client | default("Diageo / Johnnie Walker") }}</dd>
+        </div>
+        <div>
+          <dt>Analysis Period</dt>
+          <dd>{{ date | default("March 2026") }}</dd>
+        </div>
+        <div>
+          <dt>Classification</dt>
+          <dd class="status-confidential">CONFIDENTIAL</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  {% if toc %}
+  <section class="toc page-break">
+    <div class="running-header">
+      <img src="logo-gmail-whitebackground.png" height="20">
+      <span>Intelligence Analysis</span>
+    </div>
+    <h2>Executive Summary & Contents</h2>
+    <div class="toc-content">
+      {{ toc | safe }}
+    </div>
+  </section>
+  {% endif %}
+
+  <main class="report-body">
+    <div class="running-header">
+      <img src="logo-gmail-whitebackground.png" height="20">
+      <span class="report-title-short">{{ title }}</span>
+    </div>
+
+    <div class="content">
+      {{ content | safe }}
+    </div>
+
+    <footer class="page-footer">
+      <span>Circuit Intelligence © 2026</span>
+      <span class="page-number"></span>
+    </footer>
+  </main>
+
+</body>
+
+</html>

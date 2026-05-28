@@ -1,0 +1,26 @@
+data_path: ../data/beer/all-beer.csv
+dataset_name: all-beer
+timestamp_col: created
+freq: hourly
+value_cols:
+- amount
+clean:
+  auto_detect: true
+normalization:
+  enabled: false
+  lookup_sql: {}
+  enrichment_columns: []
+  hierarchy_levels:
+  - product
+  - brand
+  - subcategory
+  - category
+  - department
+deviations:
+  lookback_window: 90d
+  sensitivity: medium
+correlate: false
+scenarios:
+- name: by_store_id
+  segment_by: store_id
+  min_segment_size: 50

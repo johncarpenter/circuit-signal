@@ -10,12 +10,14 @@ Uses a 3-stage cascade:
 
 import json
 import logging
+import subprocess
+import sys
+import tempfile
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 import ruptures as rpt
-import stumpy
 from scipy import stats as scipy_stats
 
 from signal_discovery.ingest import load_data, parse_timestamps, parse_duration
@@ -27,6 +29,65 @@ SENSITIVITY_THRESHOLDS = {
     "medium": 2.5,
     "high": 2.0,
 }
+
+
+def _safe_stump(values: np.ndarray, m: int, timeout: int = 120) -> np.ndarray | None:
+    """Run stumpy.stump in an isolated subprocess via subprocess.Popen.
+
+    Uses subprocess (not multiprocessing) to avoid issues with spawning
+    processes from non-main threads (e.g. asyncio.to_thread).
+    Data is exchanged via temporary .npy files.
+    """
+    in_file = None
+    out_file = None
+    try:
+        # Write input to temp file
+        in_file = tempfile.NamedTemporaryFile(suffix=".npy", delete=False)
+        np.save(in_file, values)
+        in_file.close()
+
+        out_file = tempfile.NamedTemporaryFile(suffix=".npy", delete=False)
+        out_path = out_file.name
+        out_file.close()
+
+        script = (
+            "import sys, numpy as np\n"
+            "values = np.load(sys.argv[1])\n"
+            "m = int(sys.argv[2])\n"
+            "import stumpy\n"
+            "mp = stumpy.stump(values, m=m)\n"
+            "np.save(sys.argv[3], mp[:, 0].astype(float))\n"
+        )
+
+        proc = subprocess.run(
+            [sys.executable, "-c", script, in_file.name, str(m), out_path],
+            capture_output=True,
+            timeout=timeout,
+        )
+
+        if proc.returncode != 0:
+            stderr = proc.stderr.decode(errors="replace").strip()
+            logger.warning(
+                "Matrix Profile subprocess failed (exit %d): %s",
+                proc.returncode,
+                stderr[-200:] if stderr else "(no output)",
+            )
+            return None
+
+        result = np.load(out_path)
+        return result
+
+    except subprocess.TimeoutExpired:
+        logger.warning("Matrix Profile timed out after %ds", timeout)
+        return None
+    except Exception as e:
+        logger.warning("Matrix Profile failed: %s", e)
+        return None
+    finally:
+        if in_file:
+            Path(in_file.name).unlink(missing_ok=True)
+        if out_file:
+            Path(out_path).unlink(missing_ok=True)
 
 
 def run_deviations(
@@ -57,6 +118,25 @@ def run_deviations(
         cols = [c for c in value_cols if c in baselined_cols]
     else:
         cols = baselined_cols
+
+    # Aggregate transactional data to match baseline frequency
+    baseline_freq = manifest.get("frequency", None)
+    RESAMPLE_MAP = {
+        "sub_hourly": "1min", "hourly": "1h", "daily": "1D",
+        "weekly": "1W", "monthly": "1ME", "quarterly": "1QE", "yearly": "1YE",
+    }
+    resample_rule = RESAMPLE_MAP.get(baseline_freq)
+    if resample_rule and cols and len(df) > 0:
+        time_span = (df.index.max() - df.index.min()).total_seconds()
+        expected_periods = {
+            "sub_hourly": time_span / 60, "hourly": time_span / 3600,
+            "daily": time_span / 86400, "weekly": time_span / 604800,
+            "monthly": time_span / 2592000,
+        }.get(baseline_freq, len(df))
+        if expected_periods > 0 and len(df) > expected_periods * 2:
+            logger.info("Aggregating %d rows to %s for deviation detection", len(df), baseline_freq)
+            df = df[cols].resample(resample_rule).sum()
+            df = df.loc[df.index.notna()]
 
     if not cols:
         return {"error": "No matching columns between data and baseline."}
@@ -201,47 +281,50 @@ def _detect_column_deviations(
             })
 
     # ===== STAGE 2: Matrix Profile (contextual anomalies) =====
+    # Runs in a subprocess to isolate SIGILL/crashes from numba JIT.
+    # Cap series length to avoid O(n²) memory blow-up in stumpy.stump.
+    MAX_MP_LENGTH = 5000
     if len(full_series) >= 20:
-        try:
-            m = max(len(full_series) // 20, 4)  # subsequence length
-            mp = stumpy.stump(full_series.values.astype(float), m=m)
+        mp_series = full_series.iloc[-MAX_MP_LENGTH:] if len(full_series) > MAX_MP_LENGTH else full_series
+        m = max(len(mp_series) // 20, 4)  # subsequence length
+        mp_values = _safe_stump(mp_series.values.astype(float), m=m)
 
-            # The matrix profile values — high values = unusual subsequences
-            mp_values = mp[:, 0].astype(float)
-            mp_threshold = np.percentile(mp_values, 95)
+        if mp_values is not None:
+            try:
+                mp_threshold = np.percentile(mp_values, 95)
 
-            # Find discords in the analysis window
-            analysis_start_idx = full_series.index.get_indexer([series.index.min()], method="nearest")[0]
-            for i in range(max(0, analysis_start_idx), len(mp_values)):
-                if mp_values[i] > mp_threshold:
-                    ts = full_series.index[i]
-                    if ts >= series.index.min():
-                        discord_score = float(mp_values[i])
-                        normalized = (discord_score - mp_threshold) / (mp_values.max() - mp_threshold + 1e-10)
-                        deviations.append({
-                            "column": col_name,
-                            "type": "regime_change",
-                            "severity": "medium" if normalized < 0.5 else "high",
-                            "timestamp_range": {
-                                "start": ts.isoformat(),
-                                "end": full_series.index[min(i + m, len(full_series) - 1)].isoformat(),
-                            },
-                            "details": {
-                                "expected_value": None,
-                                "observed_value": None,
-                                "deviation_magnitude": round(normalized, 4),
-                                "z_score": None,
-                                "confidence": round(min(1.0, normalized), 3),
-                            },
-                            "persistence": "sustained",
-                            "narrative": (
-                                f"Contextual anomaly detected in '{col_name}' starting {ts.isoformat()}: "
-                                f"this pattern subsequence has no close historical match "
-                                f"(discord score: {round(discord_score, 2)})"
-                            ),
-                        })
-        except Exception as e:
-            logger.debug(f"Matrix Profile failed for '{col_name}': {e}")
+                # Find discords in the analysis window
+                analysis_start_idx = mp_series.index.get_indexer([series.index.min()], method="nearest")[0]
+                for i in range(max(0, analysis_start_idx), len(mp_values)):
+                    if mp_values[i] > mp_threshold:
+                        ts = mp_series.index[i]
+                        if ts >= series.index.min():
+                            discord_score = float(mp_values[i])
+                            normalized = (discord_score - mp_threshold) / (mp_values.max() - mp_threshold + 1e-10)
+                            deviations.append({
+                                "column": col_name,
+                                "type": "regime_change",
+                                "severity": "medium" if normalized < 0.5 else "high",
+                                "timestamp_range": {
+                                    "start": ts.isoformat(),
+                                    "end": mp_series.index[min(i + m, len(mp_series) - 1)].isoformat(),
+                                },
+                                "details": {
+                                    "expected_value": None,
+                                    "observed_value": None,
+                                    "deviation_magnitude": round(normalized, 4),
+                                    "z_score": None,
+                                    "confidence": round(min(1.0, normalized), 3),
+                                },
+                                "persistence": "sustained",
+                                "narrative": (
+                                    f"Contextual anomaly detected in '{col_name}' starting {ts.isoformat()}: "
+                                    f"this pattern subsequence has no close historical match "
+                                    f"(discord score: {round(discord_score, 2)})"
+                                ),
+                            })
+            except Exception as e:
+                logger.debug(f"Matrix Profile analysis failed for '{col_name}': {e}")
 
     # ===== STAGE 3: Change point detection on recent data =====
     if len(series) >= 15:

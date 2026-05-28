@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "circuit-worker"
+version = "0.1.0"
+description = "Circuit Signal Pipeline Worker"
+requires-python = ">=3.12"
+dependencies = [
+    "arq>=0.26",
+    "sqlalchemy>=2.0",
+    "psycopg2-binary>=2.9",
+    "boto3>=1.35",
+    "redis>=5.0",
+    "pydantic-settings>=2.0",
+    "circuit-core",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/circuit_worker"]
